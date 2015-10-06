@@ -4,10 +4,10 @@
     <title>botDB</title>
     <description>a directory of bots, allies, media and materials
 </description>
-    <link>http://tullyhansen.github.io/bots/</link>
-    <atom:link href="http://tullyhansen.github.io/bots/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 06 Oct 2015 18:18:05 +1100</pubDate>
-    <lastBuildDate>Tue, 06 Oct 2015 18:18:05 +1100</lastBuildDate>
+    <link>http://tullyhansen.github.io/botDB/</link>
+    <atom:link href="http://tullyhansen.github.io/botDB/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 06 Oct 2015 18:44:57 +1100</pubDate>
+    <lastBuildDate>Tue, 06 Oct 2015 18:44:57 +1100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Mon, 21 Sep 2015 22:26:18 +1000</pubDate>
-        <link>http://tullyhansen.github.io/bots/jekyll/update/2015/09/21/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://tullyhansen.github.io/bots/jekyll/update/2015/09/21/welcome-to-jekyll/</guid>
+        <link>http://tullyhansen.github.io/botDB/jekyll/update/2015/09/21/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://tullyhansen.github.io/botDB/jekyll/update/2015/09/21/welcome-to-jekyll/</guid>
         
         
         <category>jekyll</category>
@@ -60,7 +60,7 @@
 &lt;p&gt;Poole is a streamlined Jekyll site designed and built as a foundation for building more meaningful themes. Poole, and every theme built on it, includes the following:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Complete Jekyll setup included (layouts, config, &lt;a href=&quot;/bots/404.html&quot;&gt;404&lt;/a&gt;, &lt;a href=&quot;/bots/atom.xml&quot;&gt;RSS feed&lt;/a&gt;, posts, and &lt;a href=&quot;/bots/about&quot;&gt;example page&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Complete Jekyll setup included (layouts, config, &lt;a href=&quot;/botDB/404.html&quot;&gt;404&lt;/a&gt;, &lt;a href=&quot;/botDB/atom.xml&quot;&gt;RSS feed&lt;/a&gt;, posts, and &lt;a href=&quot;/botDB/about&quot;&gt;example page&lt;/a&gt;)&lt;/li&gt;
   &lt;li&gt;Mobile friendly design and development&lt;/li&gt;
   &lt;li&gt;Easily scalable text and component sizing with &lt;code&gt;rem&lt;/code&gt; units in the CSS&lt;/li&gt;
   &lt;li&gt;Support for a wide gamut of HTML elements&lt;/li&gt;
@@ -81,8 +81,8 @@
 &lt;p&gt;Thanks!&lt;/p&gt;
 </description>
         <pubDate>Thu, 02 Jan 2014 00:00:00 +1100</pubDate>
-        <link>http://tullyhansen.github.io/bots/2014/01/02/introducing-poole/</link>
-        <guid isPermaLink="true">http://tullyhansen.github.io/bots/2014/01/02/introducing-poole/</guid>
+        <link>http://tullyhansen.github.io/botDB/2014/01/02/introducing-poole/</link>
+        <guid isPermaLink="true">http://tullyhansen.github.io/botDB/2014/01/02/introducing-poole/</guid>
         
         
       </item>
@@ -128,8 +128,8 @@
 &lt;p&gt;Thanks!&lt;/p&gt;
 </description>
         <pubDate>Thu, 02 Jan 2014 00:00:00 +1100</pubDate>
-        <link>http://tullyhansen.github.io/bots/2014/01/02/introducing-lanyon/</link>
-        <guid isPermaLink="true">http://tullyhansen.github.io/bots/2014/01/02/introducing-lanyon/</guid>
+        <link>http://tullyhansen.github.io/botDB/2014/01/02/introducing-lanyon/</link>
+        <guid isPermaLink="true">http://tullyhansen.github.io/botDB/2014/01/02/introducing-lanyon/</guid>
         
         
       </item>
@@ -260,8 +260,8 @@
 &lt;p&gt;Want to see something else added? &lt;a href=&quot;https://github.com/poole/poole/issues/new&quot;&gt;Open an issue.&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Jan 2014 00:00:00 +1100</pubDate>
-        <link>http://tullyhansen.github.io/bots/2014/01/01/example-content/</link>
-        <guid isPermaLink="true">http://tullyhansen.github.io/bots/2014/01/01/example-content/</guid>
+        <link>http://tullyhansen.github.io/botDB/2014/01/01/example-content/</link>
+        <guid isPermaLink="true">http://tullyhansen.github.io/botDB/2014/01/01/example-content/</guid>
         
         
       </item>
@@ -279,8 +279,8 @@
 &lt;p&gt;Find out more by &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 31 Dec 2013 00:00:00 +1100</pubDate>
-        <link>http://tullyhansen.github.io/bots/2013/12/31/whats-jekyll/</link>
-        <guid isPermaLink="true">http://tullyhansen.github.io/bots/2013/12/31/whats-jekyll/</guid>
+        <link>http://tullyhansen.github.io/botDB/2013/12/31/whats-jekyll/</link>
+        <guid isPermaLink="true">http://tullyhansen.github.io/botDB/2013/12/31/whats-jekyll/</guid>
         
         
       </item>
