@@ -1,4 +1,9 @@
-# License
+---
+layout: page
+title: license
+weight: 5
+---
+_NB: Licensing is a tricky business, especially without the benfit of a background in software development. I've tried my best!_
 
 This project incorporates code from the following, whose licenses are included below:
 
@@ -6,6 +11,8 @@ This project incorporates code from the following, whose licenses are included b
 - [Poole](https://github.com/poole/poole) by Mark Otto
 
 Notwithstanding the above, this project is licensed under The MIT License (MIT).
+
+## botDB license
 
 Copyright (c) 2015 Tully Hansen.
 
@@ -45,8 +52,6 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ## Poole license
-
-The MIT License (MIT)
 
 Copyright (c) 2014 Mark Otto.
 
