@@ -3,9 +3,7 @@ layout: page
 title: license
 weight: 5
 ---
-_NB: Licensing is a tricky business, especially without the benefit of a background in software development. I've tried my best!_
-
-## Licenses
+## License
 
 This project incorporates code from the following, whose licenses are included below:
 
