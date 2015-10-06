@@ -13,7 +13,7 @@ tagline:             a directory of bots, allies, media and materials
 description: >       # this means to ignore newlines until "url:"
                      a directory of bots, allies, media and materials
 url:                 http://tullyhansen.github.io
-baseurl:             /bots
+baseurl:             /botDB
 paginate:            5
 twitter_username:    botALLY
 theme:               theme-base-0d
