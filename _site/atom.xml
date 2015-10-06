@@ -1,17 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Poole</title>
-    <description></description>
-    <link>http://getpoole.com/</link>
-    <atom:link href="http://getpoole.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 06 Oct 2015 14:40:17 +1100</pubDate>
-    <lastBuildDate>Tue, 06 Oct 2015 14:40:17 +1100</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Poole</title>
+ <link href="http://getpoole.com/atom.xml" rel="self"/>
+ <link href="http://getpoole.com/"/>
+ <updated>2015-10-06T14:40:17+11:00</updated>
+ <id>http://getpoole.com</id>
+ <author>
+   <name>Mark Otto</name>
+   <email>markdotto@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Welcome to Jekyll!</title>
+   <link href="http://getpoole.com/jekyll/update/2015/09/21/welcome-to-jekyll/"/>
+   <updated>2015-09-21T22:26:18+10:00</updated>
+   <id>http://getpoole.com/jekyll/update/2015/09/21/welcome-to-jekyll</id>
+   <content type="html">&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
@@ -25,21 +31,15 @@
 
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
 
-</description>
-        <pubDate>Mon, 21 Sep 2015 22:26:18 +1000</pubDate>
-        <link>http://getpoole.com/jekyll/update/2015/09/21/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://getpoole.com/jekyll/update/2015/09/21/welcome-to-jekyll/</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Introducing Poole</title>
-        <description>&lt;p&gt;&lt;em&gt;The Strange Case of Dr. Jekyll and Mr. Hyde&lt;/em&gt; tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel’s supporting cast is a man by the name of Mr. Poole, Dr. Jekyll’s loyal butler.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introducing Poole</title>
+   <link href="http://getpoole.com/2014/01/02/introducing-poole/"/>
+   <updated>2014-01-02T00:00:00+11:00</updated>
+   <id>http://getpoole.com/2014/01/02/introducing-poole</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;The Strange Case of Dr. Jekyll and Mr. Hyde&lt;/em&gt; tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel’s supporting cast is a man by the name of Mr. Poole, Dr. Jekyll’s loyal butler.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -78,17 +78,15 @@
 &lt;p&gt;Poole is developed on and hosted with GitHub. Head to the &lt;a href=&quot;https://github.com/poole/poole&quot;&gt;GitHub repository&lt;/a&gt; for downloads, bug reports, and features requests.&lt;/p&gt;
 
 &lt;p&gt;Thanks!&lt;/p&gt;
-</description>
-        <pubDate>Thu, 02 Jan 2014 00:00:00 +1100</pubDate>
-        <link>http://getpoole.com/2014/01/02/introducing-poole/</link>
-        <guid isPermaLink="true">http://getpoole.com/2014/01/02/introducing-poole/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Introducing Lanyon</title>
-        <description>&lt;p&gt;Lanyon is an unassuming &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that places content first by tucking away navigation in a hidden drawer. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introducing Lanyon</title>
+   <link href="http://getpoole.com/2014/01/02/introducing-lanyon/"/>
+   <updated>2014-01-02T00:00:00+11:00</updated>
+   <id>http://getpoole.com/2014/01/02/introducing-lanyon</id>
+   <content type="html">&lt;p&gt;Lanyon is an unassuming &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that places content first by tucking away navigation in a hidden drawer. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
 
 &lt;h3 id=&quot;built-on-poole&quot;&gt;Built on Poole&lt;/h3&gt;
 
@@ -125,17 +123,15 @@
 &lt;p&gt;Lanyon is developed on and hosted with GitHub. Head to the &lt;a href=&quot;https://github.com/poole/lanyon&quot;&gt;GitHub repository&lt;/a&gt; for downloads, bug reports, and features requests.&lt;/p&gt;
 
 &lt;p&gt;Thanks!&lt;/p&gt;
-</description>
-        <pubDate>Thu, 02 Jan 2014 00:00:00 +1100</pubDate>
-        <link>http://getpoole.com/2014/01/02/introducing-lanyon/</link>
-        <guid isPermaLink="true">http://getpoole.com/2014/01/02/introducing-lanyon/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Example content</title>
-        <description>&lt;div class=&quot;message&quot;&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Example content</title>
+   <link href="http://getpoole.com/2014/01/01/example-content/"/>
+   <updated>2014-01-01T00:00:00+11:00</updated>
+   <id>http://getpoole.com/2014/01/01/example-content</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 &lt;/div&gt;
 
@@ -257,17 +253,15 @@
 &lt;hr /&gt;
 
 &lt;p&gt;Want to see something else added? &lt;a href=&quot;https://github.com/poole/poole/issues/new&quot;&gt;Open an issue.&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 01 Jan 2014 00:00:00 +1100</pubDate>
-        <link>http://getpoole.com/2014/01/01/example-content/</link>
-        <guid isPermaLink="true">http://getpoole.com/2014/01/01/example-content/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>What&#39;s Jekyll?</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What's Jekyll?</title>
+   <link href="http://getpoole.com/2013/12/31/whats-jekyll/"/>
+   <updated>2013-12-31T00:00:00+11:00</updated>
+   <id>http://getpoole.com/2013/12/31/whats-jekyll</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
@@ -276,13 +270,8 @@
 &lt;p&gt;It’s an immensely useful tool and one we encourage you to use here with Lanyon.&lt;/p&gt;
 
 &lt;p&gt;Find out more by &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 31 Dec 2013 00:00:00 +1100</pubDate>
-        <link>http://getpoole.com/2013/12/31/whats-jekyll/</link>
-        <guid isPermaLink="true">http://getpoole.com/2013/12/31/whats-jekyll/</guid>
-        
-        
-      </item>
-    
-  </channel>
-</rss>
+</content>
+ </entry>
+ 
+
+</feed>
