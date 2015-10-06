@@ -1,3 +1,9 @@
+---
+layout: default
+title: welcome to botDB
+permalink: /index.html
+---
+
 # bots
 
 Twitter bot cataloguing project. There are many like it, but this is mine.

@@ -1,18 +1,43 @@
-<html>
-<head>
-	<title> Exhibit | Examples | MIT Nobel Prize Winners</title>
-	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!DOCTYPE html>
+<html lang="en-us">
 
+  
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      bots &middot; botDB
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  
+  <!-- Tully's messy crap -->
 <!-- Adapted from http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/ -->
-<!-- bots tab of botsDB Google Sheet -->
-	<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1vleb6Y37ctkjlWbCiTemABgpit83eqW1FT8HEwc0l9I/1/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
-<!-- botMakers tab of botsDB Google Sheet -->
-	<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1vleb6Y37ctkjlWbCiTemABgpit83eqW1FT8HEwc0l9I/2/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
-	<link href="js/schema.js" type="application/json" rel="exhibit-data" />
-<!-- Replace the URL here with your Exhibit 3.0 script location -->
-	<script src="http://api.simile-widgets.org/exhibit/STABLE/exhibit-api.js" type="text/javascript"></script> <script src="http://api.simile-widgets.org/exhibit/STABLE/extensions/time/time-extension.js" type="text/javascript"></script>
 
-	      <script type="text/javascript" src="/js/autolinkUsernames.js"></script>
+<!-- Exhibit 3.0 from http://api.simile-widgets.org/exhibit/STABLE/exhibit-api.js & http://api.simile-widgets.org/exhibit/STABLE/extensions/time/time-extension.js -->
+
+	<script src="http://api.simile-widgets.org/exhibit/3.1.0/exhibit-api.js" type="text/javascript"></script>
+<!-- 	<script src="/js/exhibit-3.1.0/exhibit-api.js" type="text/javascript"></script> -->
+
+<!-- not using timeline (yet) so commenting out
+	<script src="/js/time-extension.js" type="text/javascript"></script> -->
 	      
 <!-- 	      From https://dev.twitter.com/web/javascript/loading -->
 	      
@@ -35,8 +60,8 @@
 	      
 <!-- 
 	      From http://stackoverflow.com/questions/16973726/allow-users-to-embed-tweets-using-only-url
-	      I don't know how to make this work?
- -->
+	      I don't know how to make this work? So Imma comment it out for now.
+
 	      
 	      <script>
 $('#tweetLink').on('input', function() {
@@ -54,24 +79,198 @@ $('#tweetLink').on('input', function() {
                     });
                 }
 })
-</script>
+</script> -->
 	
 	<style>
+
     .bot-thumbnail {margin:5px; padding:10px; width:140px;}
     .bot-thumbnail img {width: 48px; height: 48px;}
+    .exhibit-toolboxWidget-popup.screen {position:relative; top: 0; right: 0;}
+.exhibit-facet-header-filterControl {width: 0;}
+.exhibit-facet-header {height: 3.5rem;}
+/* 
+    table * img {margin: 0;}
+ */
+    div.exhibit-facet-value-checkbox img {margin: 0;}
+/*    div.exhibit-facet-value {clear: none;} !important*/
     </style> 
-</head>
-<body>
-<div id="main-content">
+    
+
+  <!-- bots tab of botsDB Google Sheet -->
+	<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1vleb6Y37ctkjlWbCiTemABgpit83eqW1FT8HEwc0l9I/1/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
+<!-- botMakers tab of botsDB Google Sheet -->
+	<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1vleb6Y37ctkjlWbCiTemABgpit83eqW1FT8HEwc0l9I/2/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
+	<link href="/js/schema.js" type="application/json" />
+<!-- 		<link href="/js/schema.js" type="application/json" rel="exhibit-data" /> -->
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+        <h3>botDB</h3>
+    <p>a directory of bots, allies, media and materials
+</p>
+  </div>
+
+  <nav class="sidebar-nav">
+<!--     <a class="sidebar-nav-item" href="/">Home</a> -->
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item active" href="/bots/">bots</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/botALLY/">botALLY</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/botMEDIA/">botMEDIA</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/botMATERIALS/">botMATERIALS</a>
+        
+      
+    
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">about</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/contribute/">contribute</a>
+        
+      
+    
+
+
+<!--     <a class="sidebar-nav-item" href="https://github.com/tullyhansen/bots/archive/v1.0.0.zip">Download</a> 
+    <a class="sidebar-nav-item" href="https://github.com/tullyhansen/bots">GitHub project</a>-->
+    <span class="sidebar-nav-item">Currently v1.0.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2015. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">botDB</a>
+            <small>a directory of bots, allies, media and materials</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="page">
+  <h1 class="page-title">bots</h1>
+    <div id="main-content">
 	<div id="title-panel">
 		<h1>
-			Bots 
+			botsDB
 		</h1>
-		<p><a href='https://twitter.com/20hz20khz/status/648201676986404865'>tweet?</a></p>
-<!-- 		<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Twitterbot bulletin board <a href="https://twitter.com/hashtag/botALLY?src=hash">#botALLY</a> <a href="https://twitter.com/hashtag/edtech?src=hash">#edtech</a> <a href="https://twitter.com/hashtag/kidscancode?src=hash">#kidscancode</a> <a href="http://t.co/tc9Hhr0683">http://t.co/tc9Hhr0683</a> <a href="http://t.co/ydru7UnRf2">pic.twitter.com/ydru7UnRf2</a></p>&mdash; Justin Riley (@20hz20khz) <a href="https://twitter.com/20hz20khz/status/648201676986404865">September 27, 2015</a></blockquote></p> -->
+<!--working tweet embeds
+ 		<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Twitterbot bulletin board <a href="https://twitter.com/hashtag/botALLY?src=hash">#botALLY</a> <a href="https://twitter.com/hashtag/edtech?src=hash">#edtech</a> <a href="https://twitter.com/hashtag/kidscancode?src=hash">#kidscancode</a> <a href="http://t.co/tc9Hhr0683">http://t.co/tc9Hhr0683</a> <a href="http://t.co/ydru7UnRf2">pic.twitter.com/ydru7UnRf2</a></p>&mdash; Justin Riley (@20hz20khz) <a href="https://twitter.com/20hz20khz/status/648201676986404865">September 27, 2015</a></blockquote></p>
 		<p><blockquote class="twitter-tweet" lang="en"><a href="https://twitter.com/20hz20khz/status/648201676986404865"></a></blockquote></p>
-		<p><blockquote class="twitter-tweet" lang="en"><a href="https://twitter.com/Veeren_Jubbal/status/649061449646653440"></a></blockquote></p>
-		<p>https://twitter.com/20hz20khz/status/648201676986404865</p>
+		<p><blockquote class="twitter-tweet" lang="en"><a href="https://twitter.com/Veeren_Jubbal/status/649061449646653440"></a></blockquote></p>-->
 	</div>
 	<div id="top-panels">
 		<table width="100%">
@@ -93,11 +292,11 @@ $('#tweetLink').on('input', function() {
 		<div data-ex-role="facet" data-ex-facet-class="TextSearch">
 		</div>
 	</div>
-	<div data-ex-role="viewPanel" style="padding: 1em 0.5in;">
+	<div data-ex-role="viewPanel">
 
 <!--     <div data-ex-role="collection" data-ex-item-types="Item"></div> -->
 		            <table data-ex-role="lens" class="botmaker" style="display: none;"><tr>
-                <td><img data-ex-src-content=".profile_image_url" alt="portrait" /></td>
+                <td style="width: 3rem;"><img class="bot-thumbnail-img" data-ex-src-content=".profile_image_url" alt="portrait" /></td>
                 <td>
                     @<a data-ex-href-content=".label" data-ex-content=".label" class="name"></a>
                     <div data-ex-if-exists=".description" class="description">
@@ -145,5 +344,46 @@ $('#tweetLink').on('input', function() {
             </div>
  -->
 </div>
-</body>
+
+<!-- 
+<div class="posts">
+  
+</div>
+
+<div class="pagination">
+  
+    <span class="pagination-item older">Older</span>
+  
+  
+    <span class="pagination-item newer">Newer</span>
+  
+</div>
+ -->
+
+
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
 </html>

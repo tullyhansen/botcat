@@ -1,7 +1,6 @@
 ---
-layout: page-exhibit
-title: bots
-weight: 1
+layout: default
+title: Home
 ---
 
   {% include exhibit-bot.html %}

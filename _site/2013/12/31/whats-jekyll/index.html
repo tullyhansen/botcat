@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-  <head>
+<head>
+  
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -11,7 +11,7 @@
 
   <title>
     
-      What's Jekyll? &middot; Poole
+      What's Jekyll? &middot; botDB
     
   </title>
 
@@ -30,11 +30,7 @@
   
   <!-- Tully's messy crap -->
 <!-- Adapted from http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/ -->
-<!-- bots tab of botsDB Google Sheet -->
-	<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1vleb6Y37ctkjlWbCiTemABgpit83eqW1FT8HEwc0l9I/1/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
-<!-- botMakers tab of botsDB Google Sheet -->
-	<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1vleb6Y37ctkjlWbCiTemABgpit83eqW1FT8HEwc0l9I/2/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
-	<link href="/js/schema.js" type="application/json" rel="exhibit-data" />
+
 <!-- Exhibit 3.0 from http://api.simile-widgets.org/exhibit/STABLE/exhibit-api.js & http://api.simile-widgets.org/exhibit/STABLE/extensions/time/time-extension.js -->
 
 	<script src="http://api.simile-widgets.org/exhibit/3.1.0/exhibit-api.js" type="text/javascript"></script>
@@ -89,16 +85,19 @@ $('#tweetLink').on('input', function() {
 
     .bot-thumbnail {margin:5px; padding:10px; width:140px;}
     .bot-thumbnail img {width: 48px; height: 48px;}
+    .exhibit-toolboxWidget-popup.screen {position:relative; top: 0; right: 0;}
+.exhibit-facet-header-filterControl {width: 0;}
+.exhibit-facet-header {height: 3.5rem;}
 /* 
     table * img {margin: 0;}
  */
     div.exhibit-facet-value-checkbox img {margin: 0;}
 /*    div.exhibit-facet-value {clear: none;} !important*/
     </style> 
+    
+
 </head>
-
-
-  <body>
+  <body class="theme-base-0d">
 
     <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
@@ -107,11 +106,13 @@ $('#tweetLink').on('input', function() {
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p></p>
+        <h3>botDB</h3>
+    <p>a directory of bots, allies, media and materials
+</p>
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item" href="/">Home</a>
+<!--     <a class="sidebar-nav-item" href="/">Home</a> -->
 
     
 
@@ -126,22 +127,6 @@ $('#tweetLink').on('input', function() {
       
     
       
-        
-          <a class="sidebar-nav-item" href="/about/">About</a>
-        
-      
-    
-      
-    
-      
-        
-      
-    
-      
-    
-      
-        
-      
     
       
     
@@ -154,6 +139,69 @@ $('#tweetLink').on('input', function() {
       
     
       
+    
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/bots/">bots</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/botALLY/">botALLY</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/botMEDIA/">botMEDIA</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/botMATERIALS/">botMATERIALS</a>
+        
+      
+    
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">about</a>
         
       
     
@@ -165,12 +213,25 @@ $('#tweetLink').on('input', function() {
         
       
     
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/contribute/">contribute</a>
+        
       
     
 
-    <a class="sidebar-nav-item" href="https://github.com/poole/poole/archive/v2.0.0.zip">Download</a>
-    <a class="sidebar-nav-item" href="https://github.com/poole/poole">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v2.0.0</span>
+
+<!--     <a class="sidebar-nav-item" href="https://github.com/tullyhansen/bots/archive/v1.0.0.zip">Download</a> 
+    <a class="sidebar-nav-item" href="https://github.com/tullyhansen/bots">GitHub project</a>-->
+    <span class="sidebar-nav-item">Currently v1.0.0</span>
   </nav>
 
   <div class="sidebar-item">
@@ -187,8 +248,8 @@ $('#tweetLink').on('input', function() {
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="/" title="Home">Poole</a>
-            <small>The Jekyll Butler</small>
+            <a href="/" title="Home">botDB</a>
+            <small>a directory of bots, allies, media and materials</small>
           </h3>
         </div>
       </div>

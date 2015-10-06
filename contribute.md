@@ -1,7 +1,7 @@
 ---
 layout: page
-title: about
-weight: 0
+title: contribute
+weight: 5
 ---
 
 <p class="message">

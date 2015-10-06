@@ -7,13 +7,11 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Lanyon
-tagline:             'A Jekyll theme'
+title:               botDB
+tagline:             a directory of bots, allies, media and materials
 
-description: >       # this means to ignore newlines until "baseurl:"
-                     Write an awesome description for your new site here. You can edit this
-                     line in _config.yml. It will appear in your document head meta (for
-                     Google search results) and in your feed.xml site description.
+description: >       # this means to ignore newlines until "url:"
+                     a directory of bots, allies, media and materials
 url:                 http://lanyon.getpoole.com
 baseurl:             ''
 paginate:            5
@@ -24,6 +22,9 @@ author:
   name:              Tully Hansen
   url:               https://twitter.com/tullyhansen
   email:             tully@tullyhansen.com
+  
+github:
+  repo:              https://github.com/tullyhansen/bots
 
 # Custom vars
 version:             1.0.0
