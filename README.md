@@ -7,7 +7,18 @@ weight: 0
 
 # botDB
 
-This is my Twitter bot cataloguing project. There are many like it, but this one is mine—and yours, too, if you want! See _How to Contribute_ below.
+This is my Twitter bot database. There are many like it, but this one is mine–and yours, too, if you want! See _How to Contribute_, below.
+
+[botDB](.) is divided into four main categories:
+
+- [bots](bots/), a directory of Twitter bot accounts.
+- [botALLY](botALLY/), for 
+- [botMEDIA](botMEDIA/)
+- [botMATERIALS](botMATERIALS/)
+
+Please note! These pages are quite data-hungry (>1MB), and load rather slowly.
+
+## The 
 
 Built with [Exhibit][], pulling data from [a Google Sheet][].
 
@@ -18,6 +29,14 @@ Built with [Exhibit][], pulling data from [a Google Sheet][].
 
 [Exhibit]: http://simile-widgets.org/exhibit3/
 [a Google Sheet]: https://docs.google.com/spreadsheets/d/1vleb6Y37ctkjlWbCiTemABgpit83eqW1FT8HEwc0l9I/
+
+## How to Contribute
+
+tk
+
+## Feedback and Support
+
+Feel free to get in touch with suggestions, questions, comments and concerns.
 
 botally-toolkit
 ===============
@@ -51,6 +70,8 @@ We have a mailing list located at: project@google-groups.com
 
 License
 -------
+
+botDB and rela
 
 The project is licensed under the BSD license, even that means.
 
