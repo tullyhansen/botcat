@@ -16,6 +16,7 @@ url:                 http://tullyhansen.github.io
 baseurl:             /bots
 paginate:            5
 twitter_username:    botALLY
+theme:               theme-base-0d
 
 # About/contact
 author:
@@ -27,7 +28,7 @@ github:
   repo:              https://github.com/tullyhansen/bots
 
 # Custom vars
-version:             1.0.0
+version:             0.0
 
 # Build settings
 markdown: kramdown
