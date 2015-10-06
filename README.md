@@ -7,154 +7,54 @@ weight: 0
 
 # botDB
 
-This is my Twitter bot database. There are many like it, but this one is mine–and yours, too, if you want! See _How to Contribute_, below.
+This is my Twitter **bot** **d**ata**b**ase. There are many like it, but this one is mine—and [yours too](#how-to-contribute), if you want!
 
-[botDB](.) is divided into four main categories:
+[botDB](.) is a good-natured. It has four main sections:
 
-- [bots](bots/), a directory of Twitter bot accounts.
-- [botALLY](botALLY/), for 
-- [botMEDIA](botMEDIA/)
-- [botMATERIALS](botMATERIALS/)
+- [bots](bots/), a directory of Twitter bot accounts
+- [botALLY](botALLY/), for their human creators and compatriots
+- [botMEDIA](botMEDIA/), links to writing, talks, and news coverage on bots
+- [botMATERIALS](botMATERIALS/), APIs, datasets and code
 
-Please note! These pages are quite data-hungry (>1MB), and load rather slowly.
+Each section can be browsed, searched and filtered in various ways. [botDB](.) is intended as a central repository to capture much of the around Twitter bot scene
 
-## The 
+Other
 
-Built with [Exhibit][], pulling data from [a Google Sheet][].
+## How it works 
 
-## TODO
+[botDB](.) is put together using the following:
 
-- Better linking to Twitter profiles using Exhibit's `data-ex-href-subcontent`
-- Figure out the relational (?) database part
+- [Jekyll](http://jekyllrb.com) (running on [Github Pages](https://pages.github.com)) for static website hosting
+- Mark Otto's [Poole](https://github.com/poole/poole) and [Lanyon](https://github.com/poole/lanyon), for making said site much prettier
+- [Google Sheets](https://docs.google.com/spreadsheets/) and [Forms](https://docs.google.com/forms/) to collect, store and serve data
+- [Exhibit 3.0](http://simile-widgets.org/exhibit3/), 'a publishing framework for… data-rich interactive Web pages', is used for data display and visualisation 
 
-[Exhibit]: http://simile-widgets.org/exhibit3/
-[a Google Sheet]: https://docs.google.com/spreadsheets/d/1vleb6Y37ctkjlWbCiTemABgpit83eqW1FT8HEwc0l9I/
+## How to contribute
 
-## How to Contribute
+The simplest and most helpful thing is to add more entries to the database!
 
-tk
+Right now there's no way to edit or delete existing entries yourself. If you need to do so, you can [get in touch](#feedback-and-support).
 
-## Feedback and Support
+At this point in time the Google Sheets are not directly editable by the public; this may change in future.
 
-Feel free to get in touch with suggestions, questions, comments and concerns.
+If you'd like to make improvements to the site itself, and you have a Github account, you're welcome to [fork](https://guides.github.com/activities/forking/) botDB – you'll need Jekyll installed if you want to run the site locally.
 
-botally-toolkit
-===============
+## Feedback and support
 
-botally-toolkit is a series of Python scripts designed for gathering data about Twitter bot accounts
+botDB is maintained by [Tully Hansen](http://tullyhansen.com), whose Twitter handle is . Please tweet [@tullyhansen](http://twitter.com/tullyhansen) with any questions, suggestions, comments or concerns.
 
-Features
---------
+## License
 
-- Be awesome
-- Make things faster
+[botDB](.) (the website and corresponding Github repository) is licensed under The MIT License. For details, consult the [full license](license/).
 
-Installation
-------------
+The contents of the Google Sheets
 
-Install $project by running:
+## Acknowledgements
 
-    install project
+In no particular order, and reserving the right to omissions:
 
-Contribute
-----------
+- the botally and 
 
-- Issue Tracker: github.com/tullyhansen/botally-toolkit/issues
-- Source Code: github.com/tullyhansen/botally-toolkit
+Thanks! 
 
-Support
--------
-
-If you are having issues, please let me know.
-We have a mailing list located at: project@google-groups.com
-
-License
--------
-
-botDB and rela
-
-The project is licensed under the BSD license, even that means.
-
-
-# botally-toolkit
-
-A chaotic good bunch of Python scripts for collecting data about Twitter bot accounts.
-
-## How to use
-
-Seeing as I just spent the best part of an hour figuring out how to run these scripts again after re-downloading the Github file
-
-- 
-
-You'll need to make a file in the root folder called .env and it should look like this (except with your app's keys and tokens in the quotation marks):
-
-	# some env variables
-
-	TWITTER_API_KEY="yourAPIkeyappearslikethis"
-	TWITTER_API_SECRET="itisimportantthatyoutrynottocommityourkeystoGitHub"
-	TWITTER_ACCESS_TOKEN="11111111-donotgiveyourTwittertokensawaytostrangers"
-	TWITTER_ACCESS_TOKEN_SECRET="payheedanounceofpreventionisworthapoundofcure"
-
-## Todo
-
-Fix up this
-
-botally-toolkit
-===============
-
-botally-toolkit is a series of Python scripts designed for gathering data about Twitter bot accounts
-
-Features
---------
-
-- Be awesome
-- Make things faster
-
-Installation
-------------
-
-Install $project by running:
-
-    install project
-
-Contribute
-----------
-
-- Issue Tracker: github.com/tullyhansen/botally-toolkit/issues
-- Source Code: github.com/tullyhansen/botally-toolkit
-
-Support
--------
-
-If you are having issues, please let me know.
-We have a mailing list located at: project@google-groups.com
-
-License
--------
-
-I'm utterly inexpert at licensing. This project is designed to be useful to other people
-
-
-# botally-toolkit
-
-A chaotic good bunch of Python scripts for collecting data about Twitter bot accounts.
-
-## How to use
-
-Seeing as I just spent the best part of an hour figuring out how to run these scripts again after re-downloading the Github file
-
-- 
-
-You'll need to make a file in the root folder called .env and it should look like this (except with your app's keys and tokens in the quotation marks):
-
-	# some env variables
-
-	TWITTER_API_KEY="yourAPIkeyappearslikethis"
-	TWITTER_API_SECRET="itisimportantthatyoutrynottocommityourkeystoGitHub"
-	TWITTER_ACCESS_TOKEN="11111111-donotgiveyourTwittertokensawaytostrangers"
-	TWITTER_ACCESS_TOKEN_SECRET="payheedanounceofpreventionisworthapoundofcure"
-
-## Todo
-
-Fix up this
-
+<3
