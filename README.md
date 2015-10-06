@@ -1,12 +1,13 @@
 ---
-layout: default
-title: welcome to botDB
+layout: page
+title: about
 permalink: /index.html
+weight: 0
 ---
 
-# bots
+# botDB
 
-Twitter bot cataloguing project. There are many like it, but this is mine.
+A Twitter bot cataloguing project. There are many like it, but this is mine. And yours, too! See _How to Contribute_ below.
 
 Built with [Exhibit][], pulling data from [a Google Sheet][].
 
