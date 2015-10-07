@@ -37,7 +37,7 @@ If you'd like to **make improvements to the site** itself, and you have a Github
 
 ## How to behave
 
-[botDB](.) is built in a spirit of curiosity, generosity and respect, and trusts the people (and bots) using and contributing to the database to enter into the same.
+[botDB](.) comes from a place of generosity, curiosity and respect towards bots and their makers, and trusts users and contributors (both flesh and not) to do the same.
 
 It most emphatically is **not** intended to be a 'bot(maker) doxxing database' or tool of harassment. Though it may seem harmless, even fun to speculate or investigate anonymous or pseudonymous authors and their works ([arguable](http://www.slate.com/articles/technology/technology/2012/03/ruby_ruby_on_rails_and__why_the_disappearance_of_one_of_the_world_s_most_beloved_computer_programmers_.single.html), at best), we encourage contributors **in the strongest possible terms** to source only from readily available public info, such as attribution within bot bios, public Twitter lists, botmaker blog posts and so on.
 
