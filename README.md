@@ -64,9 +64,9 @@ For further details, see the [full license](license/).
 
 ## FAQ
 
-Q: What does 'tk' mean?
+### What does 'tk' mean?
 
-A: [tk](https://en.wikipedia.org/wiki/To_come_(publishing))
+[tk](https://en.wikipedia.org/wiki/To_come_(publishing))
 
 ## Acknowledgements
 
