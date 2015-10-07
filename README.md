@@ -22,7 +22,7 @@ Read on to find out [how it works](#how-it-works), [how to behave](#how-to-behav
 
 [botDB](.) is put together using the following:
 
-- [Jekyll](http://jekyllrb.com) (running on [Github Pages](https://pages.github.com)) for static website hosting
+- [Jekyll](http://jekyllrb.com) (running on [GitHub Pages](https://pages.github.com)) for static website hosting
 - Mark Otto's [Poole](https://github.com/poole/poole) and [Lanyon](https://github.com/poole/lanyon), for making said site much prettier
 - [Google Sheets](https://docs.google.com/spreadsheets/) and [Forms](https://docs.google.com/forms/) to collect, store and serve data
 - [Exhibit 3.0](http://simile-widgets.org/exhibit3/), 'a publishing framework for… data-rich interactive Web pages', for data display and visualisation
@@ -45,7 +45,7 @@ Though [we](#who-to-complain-to) hope not to have to, we reserve utterly the rig
 
 The simplest and most helpful thing is to **add entries to the database**! But be sure to read up on [how to behave](#how-to-behave) first. You're encouraged to submit entries for yourself and your own bots, writing and tools, as well as for the work of others that you admire. This can be done using the Google Forms embedded at the top of each section, which effectively publish 'live' to the site. You're also encouraged (though not required) to sign your name (or alias, Twitter handle, etc.) to your submissions.
 
-If you'd like to **make improvements to the site** itself, and you have a Github account, you're welcome to [fork](https://guides.github.com/activities/forking/) the [botDB repo](https://github.com/tullyhansen/botDB/) – you'll [need Jekyll installed](http://jekyllrb.com/docs/installation/) if you want to run the site locally. Pull requests welcomed!
+If you'd like to **make improvements to the site** itself, and you have a GitHub account, you're welcome to [fork](https://guides.github.com/activities/forking/) the [botDB repo](https://github.com/tullyhansen/botDB/) – you'll [need Jekyll installed](http://jekyllrb.com/docs/installation/) if you want to run the site locally. Pull requests welcomed!
 
 ## Who to complain to
 
@@ -59,7 +59,7 @@ Please get in touch with questions, suggestions, concerns or [clumsy robot GIFs]
 
 Licensing is confusing as heck! Hopefully [botDB](.) becomes a useful, interesting resource in its own right, but also one that can freely be incorporated into other projects. With this aim in mind:
 
-- the [botDB](.) website (and associated Github code repository) is licensed under the MIT License
+- the [botDB](.) website (and associated GitHub code repository) is licensed under the MIT License
 - elements of the [botDB](.) website and code fall under the licenses assigned by their respective creators, as described in the [full license](license/)
 - the [botDB](.) database (collected by and stored in Google Docs) is made available under the [Open Database License](http://opendatacommons.org/licenses/odbl/1.0/)
 - any rights in individual contents of the database are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
