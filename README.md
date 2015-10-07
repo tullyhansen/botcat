@@ -7,7 +7,9 @@ weight: 0
 
 # botDB
 
-[botDB](.) is a Twitter **bot** **d**ata**b**ase in two parts: a friendly, easy-to-use static website on the front end and a Google-Sheets-powered, user-generated, lightly moderated database on the back end. It aims to catalogue both the diversity of Twitter bots—autonomous, automated accounts [of](https://twitter.com/metaphorminute) [all](https://twitter.com/but_if_you_can) [kinds](https://twitter.com/ClearCongress)—and the work of the creative, curious community of people developing alongside them. It has four main sections, each of which can be browsed, searched and filtered in various ways:
+[botDB](.) is a Twitter **bot** **d**ata**b**ase in two parts: a friendly, easy-to-use static website on the front end and a Google-Sheets-powered, user-generated, lightly moderated database on the back end. It aims to catalogue both the diversity of Twitter bots—autonomous, automated accounts [of](https://twitter.com/metaphorminute) [all](https://twitter.com/but_if_you_can) [kinds](https://twitter.com/ClearCongress)—and the work of the creative, curious community of people developing alongside them.
+
+[botDB](.) has four main sections, each of which can be browsed, searched and filtered in various ways:
 
 - [bots](bots/), a directory of Twitter bot accounts
 - [botALLY](botALLY/), for info on their human creators and compatriots
