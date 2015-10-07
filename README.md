@@ -45,6 +45,10 @@ The maintainers of [botDB](.) respect the rights of contributors and non-contrib
 
 Though we hope not to have to, we reserve utterly the right to edit or remove entries as we see fit, for any reason.
 
+## Feedback and support
+
+botDB is presently maintained by [Tully Hansen](http://tullyhansen.com), who is best contacted either at [@tullyhansen](http://twitter.com/tullyhansen) or via [tullyhansen.com](http://tullyhansen.com). Please get in touch with questions, suggestions, comments or concerns.
+
 ## Licensing
 
 Licensing is confusing as heck! It is hoped that [botDB](.) becomes an interesting and useful resource in its own right, but also one that can freely be incorporated into other projects. With this aim in mind:
@@ -57,10 +61,6 @@ Licensing is confusing as heck! It is hoped that [botDB](.) becomes an interesti
 For entries submitted to the Google Docs comprising the [botDB](.) database, copyright remains with the contributor but the content is licensed for use in accordance with [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/), in a similar manner to [Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Copyrights). (I hope.)
 
 For further details, see the [full license](license/).
-
-## Feedback and support
-
-botDB is maintained by [Tully Hansen](http://tullyhansen.com), who is best contacted on Twitter at [@tullyhansen](http://twitter.com/tullyhansen). Please get in touch with questions, suggestions, comments or concerns.
 
 ## FAQ
 
