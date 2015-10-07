@@ -14,7 +14,7 @@ This is my Twitter **bot** **d**ata**b**ase. There are [many](http://twitter.pbw
 - [bots](bots/), a directory of Twitter bot accounts
 - [botALLY](botALLY/), for info on their human creators and compatriots
 - [botMEDIA](botMEDIA/), links to writing, talks, and news coverage on bots
-- [botMATERIALS](botMATERIALS/), for APIs, datasets, code and other bits for making bots
+- [botMATERIALS](botMATERIALS/), for APIs, datasets, code and other bits for botmaking
 
 ## How it works 
 
