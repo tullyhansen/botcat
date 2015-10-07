@@ -29,7 +29,7 @@ This is my Twitter **bot** **d**ata**b**ase. There are [many](http://twitter.pbw
 
 ## How to contribute
 
-**This site is presently very much ⚠️ UNDER CONSTRUCTION ⚠️ and doesn't quite yet work  as intended. Once it does, the following will apply, but for now hang tight, or [get in touch](#feedback-and-support)!**
+**This site is presently very much ⚠️ UNDER CONSTRUCTION ⚠️ and doesn't quite yet work  as intended. Once it does, the following will apply, but for now hang tight, or [get in touch](#who-to-complain-to)!**
 
 The simplest and most helpful thing is to **add entries to the database**! But be sure to read up on [how to behave](#how-to-behave) first. You're encouraged to submit entries for yourself and your own bots, writing and tools, as well as for the work of others that you admire. This can be done using the Google Forms embedded at the top of each section, which effectively publish 'live' to the site. You're also encouraged (though not required) to sign your name (or alias, Twitter handle, etc.) to your submissions.
 
@@ -41,11 +41,11 @@ If you'd like to **make improvements to the site** itself, and you have a Github
 
 It most emphatically is **not** intended to be a 'bot(maker) doxxing database' or tool of harassment. Though it may seem harmless, even fun to speculate or investigate anonymous or pseudonymous authors and their works ([arguable](http://www.slate.com/articles/technology/technology/2012/03/ruby_ruby_on_rails_and__why_the_disappearance_of_one_of_the_world_s_most_beloved_computer_programmers_.single.html), at best), we encourage contributors **in the strongest possible terms** to source only from readily available public info, such as attribution within bot bios, public Twitter lists, botmaker blog posts and so on.
 
-The maintainers of [botDB](.) respect the rights of contributors and non-contributors alike to define their own terms of address (preferred name or alias, pronouns) and will strive to make sure these are used in accordance with the wishes of the individual wherever they appear. Similarly, [botDB](.) respects the right of anyone included or referenced in any entry to request amendment or deletion of said entry, or to opt out of the database completely. The Google Sheets powering the site are not publicly editable, so right now there's no way to edit or delete existing entries yourself. If you need, please [get in touch](#feedback-and-support) and we'll endeavour to comply with such requests **within 48 hours**.
+The maintainers of [botDB](.) respect the rights of contributors and non-contributors alike to define their own terms of address (preferred name or alias, pronouns) and will strive to make sure these are used in accordance with the wishes of the individual wherever they appear. Similarly, [botDB](.) respects the right of anyone included or referenced in any entry to request amendment or deletion of said entry, or to opt out of the database completely. The Google Sheets powering the site are not publicly editable, so right now there's no way to edit or delete existing entries yourself. If you need, please [get in touch](#who-to-complain-to) and we'll endeavour to comply with such requests **within 48 hours**.
 
 Though we hope not to have to, we reserve utterly the right to edit or remove entries as we see fit, for any reason.
 
-## Feedback and support
+## Who to complain to
 
 botDB is presently maintained by [Tully Hansen](http://tullyhansen.com), who is best contacted either at [@tullyhansen](http://twitter.com/tullyhansen) or via [tullyhansen.com](http://tullyhansen.com). Please get in touch with questions, suggestions, comments or concerns.
 
