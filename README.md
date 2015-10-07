@@ -51,7 +51,7 @@ botDB is presently maintained by [Tully Hansen](http://tullyhansen.com), who is 
 
 ## Licensing
 
-Licensing is confusing as heck! It is hoped that [botDB](.) becomes an interesting and useful resource in its own right, but also one that can freely be incorporated into other projects. With this aim in mind:
+Licensing is confusing as heck! Hopefully [botDB](.) becomes an interesting and useful resource in its own right, but also one that can freely be incorporated into other projects. With this aim in mind:
 
 - the [botDB](.) website (and associated Github code repository) is licensed under the MIT License
 - elements of the [botDB](.) website and code fall under the licenses assigned by their respective creators, as described in the [full license](license/)
