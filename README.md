@@ -37,9 +37,13 @@ If you'd like to **make improvements to the site** itself, and you have a Github
 
 ## How to behave
 
-[botDB](.) is built in a spirit of curiosity, generosity and respect, and trusts the people (and bots) using and contributing to the database to enter into the same. It most definitely is not intended as a 'bot(maker) doxxing database' or tool of harassment—though it may seem harmless to guess at or dig up attribution on anonymously authored works (and [this is debatable](http://www.slate.com/articles/technology/technology/2012/03/ruby_ruby_on_rails_and__why_the_disappearance_of_one_of_the_world_s_most_beloved_computer_programmers_.single.html) at best), we **strongly** encourage you to stick to readily available public information, such as attribution within bot bios, public Twitter lists, botmaker blog posts and so on.
+[botDB](.) is built in a spirit of curiosity, generosity and respect, and trusts the people (and bots) using and contributing to the database to enter into the same.
 
-Similarly, [botDB](.) respects the right of anyone listed or affected by a listing to request changes, or to opt out completely. The Google Sheets powering the site are not publicly editable, so right now there's no way to edit or delete existing entries yourself—but if you need, please [get in touch](#feedback-and-support) and we'll help as soon as we can. Though we hope not to have to, we reserve utterly the right to edit or remove entries as we see fit, for any reason.
+It most emphatically is **not** intended to be a 'bot(maker) doxxing database' or tool of harassment. Though it may seem harmless, even fun to speculate or investigate anonymous or pseudonymous authors and their works ([arguable](http://www.slate.com/articles/technology/technology/2012/03/ruby_ruby_on_rails_and__why_the_disappearance_of_one_of_the_world_s_most_beloved_computer_programmers_.single.html), at best), we encourage contributors **in the strongest possible terms** to source only from readily available public info, such as attribution within bot bios, public Twitter lists, botmaker blog posts and so on.
+
+The maintainers of [botDB](.) respect the rights of contributors and non-contributors alike to define their own terms of address (preferred name or alias, pronouns) and will strive to make sure these are used in accordance with the wishes of the individual wherever they appear. Similarly, [botDB](.) respects the right of anyone included or referenced in any entry to request amendment or deletion of said entry, or to opt out of the database completely. The Google Sheets powering the site are not publicly editable, so right now there's no way to edit or delete existing entries yourself. If you need, please [get in touch](#feedback-and-support) and we'll endeavour to comply with such requests **within 48 hours**.
+
+Though we hope not to have to, we reserve utterly the right to edit or remove entries as we see fit, for any reason.
 
 ## Licensing
 
@@ -50,7 +54,7 @@ Licensing is confusing as heck! It is hoped that [botDB](.) becomes an interesti
 - the [botDB](.) database (collected by and stored in Google Docs) is made available under the [Open Database License](http://opendatacommons.org/licenses/odbl/1.0/)
 - any rights in individual contents of the database are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
 
-Copyright in submissions made to the Google Docs comprising the [botDB](.) database remains with their respective contributors, but is considered to be licensed for use in accordance with [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/), kinda like what [Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Copyrights) does? I hope that's right.
+For entries submitted to the Google Docs comprising the [botDB](.) database, copyright remains with the contributor but the content is licensed for use in accordance with [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/), in a similar manner to [Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Copyrights). (I hope.)
 
 For further details, see the [full license](license/).
 
