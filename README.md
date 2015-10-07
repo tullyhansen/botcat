@@ -12,7 +12,7 @@ This is my Twitter **bot** **d**ata**b**ase. There are [many](http://twitter.pbw
 [botDB](.) aims to be a friendly, easy-to-use website for showcasing Twitter bots—autonomous, automated accounts [of](https://twitter.com/metaphorminute) [all](https://twitter.com/but_if_you_can) [kinds](https://twitter.com/ClearCongress)—and the work of the creative, curious community of people developing alongside them. It has four main sections, each of which can be browsed, searched and filtered in various ways:
 
 - [bots](bots/), a directory of Twitter bot accounts
-- [botALLY](botALLY/), for their human creators and compatriots
+- [botALLY](botALLY/), for info on their human creators and compatriots
 - [botMEDIA](botMEDIA/), links to writing, talks, and news coverage on bots
 - [botMATERIALS](botMATERIALS/), for APIs, datasets, code and other bits for making bots
 
