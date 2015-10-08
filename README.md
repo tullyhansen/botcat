@@ -30,19 +30,19 @@ Read on to find out [how it works](#how-it-works), [how to behave](#how-to-behav
 - various other code snippets and suggestions, attributed where they appear in source
 - lots of Googling
 
-[botDB](.) is _user-generated_ in that anyone may submit entries to the database without needing to sign up, log in or otherwise verify their identity; it is _lightly moderated_ in the sense that new entries are opted into the database by default, but [the maintainers of botDB](#who-to-complain-to) reserve the right to edit or remove any entry, for any reason, at their discretion.
+[botDB](.) is _user-generated_ in that submissions (via Google Form) are open to anyone, and are immediately opted in to the database by default; it is _lightly moderated_ in that [the maintainers of botDB](#who-to-complain-to) reserve the right to edit or remove any entry, for any reason, at their discretion.
 
 ## How to behave
 
 **[botDB](.) comes from a place of generosity, curiosity and respect towards bots and their makers**, and [the maintainers of botDB](#who-to-complain-to) trust users and contributors to do the same. The following guidelines are to keep the database useful, usable and safe for everyone, and are subject to change in line with this guiding principle. If they are anywhere unclear, insufficiently detailed or otherwise lacking, please [let us know](#who-to-complain-to)!
 
-**[botDB](.) most emphatically is not a 'bot(maker) doxxing database' or tool of harassment**, Harassment in any form, including but not limited to offensive comments relating to gender, gender identity and expression, sexual orientation, disability, mental illness, neuro(a)typicality, physical appearance, body size, race, immigration status, religion, or other identity markers, will not be tolerated, and will be removed [by the maintainers](#who-to-complain-to) at the earliest opportunity.
+**[botDB](.) most emphatically is not a 'bot(maker) doxxing database' or tool of harassment**. Harassment in any form, including but not limited to offensive comments relating to gender, gender identity and expression, sexual orientation, disability, mental illness, neuro(a)typicality, physical appearance, body size, race, immigration status, religion, or other identity markers, will not be tolerated, and will be removed [by the maintainers](#who-to-complain-to) at the earliest opportunity.
 
 [The maintainers of botDB](#who-to-complain-to) uphold the right of everyone in [botDB](.) (contributor or not) to assert the name (or alias) and pronouns by which they be addressed, and will make every effort to ensure these are used accordingly throughout. Similarly, [we](#who-to-complain-to) uphold the right of everyone (contributor or not) to request changes to any entry with which they are not completely comfortable, and for any such changes to be negotiated and put into place in a timely way.
 
-Though it may seem harmless, even fun to speculate on or investigate anonymous or pseudonymous authors and works ([arguable, at best](http://www.slate.com/articles/technology/technology/2012/03/ruby_ruby_on_rails_and__why_the_disappearance_of_one_of_the_world_s_most_beloved_computer_programmers_.single.html)), [we](#who-to-complain-to) neither encourage nor condone such behaviour, and we suggest in the strongest terms that **all data submitted should be sourced from readily available public materials**: public Twitter lists, botmaker blog posts, attribution in bot bios and so on. Further to this, any  
+Though it may seem harmless, even fun to speculate on or investigate anonymous or pseudonymous authors and works ([arguable, at best](http://www.slate.com/articles/technology/technology/2012/03/ruby_ruby_on_rails_and__why_the_disappearance_of_one_of_the_world_s_most_beloved_computer_programmers_.single.html)), [we](#who-to-complain-to) neither encourage nor condone such behaviour, and we suggest in the strongest terms that **all data submitted should be sourced from readily available public materials**: public Twitter lists, botmaker blog posts, attribution in bot bios and so on.
 
-Finally, given [botDB](.) may contain information on people who have not explicitly consented to appear in the database, **anyone may opt themselves and/or any or all of their work out of appearing in [botDB](.), at any time and without any requiring explanation or further discussion, by contacting [the maintainers](#who-to-complain-to)**. We will endeavour to comply with any and all requests in relation any of the above **within 48 hours**.
+Finally, given [botDB](.) may contain information on people who have not explicitly consented to appear in the database, **anyone may opt themselves and/or any or all of their work out of appearing in [botDB](.), at any time and without requiring explanation or further discussion, by contacting [the maintainers](#who-to-complain-to)**. We will endeavour to comply with any and all requests in relation any of the above **within 48 hours**.
 
 _Parts of this section have been adapted from the [LGBTQ in Tech Code of Conduct](http://lgbtq.technology/coc.html)._
 
@@ -64,14 +64,13 @@ Please get in touch with questions, suggestions, concerns or [clumsy robot GIFs]
 
 ## Licensing
 
-Licensing is confusing as heck! Hopefully [botDB](.) becomes a useful, interesting resource in its own right, but also one that can freely be incorporated into other projects. With this aim in mind:
+Licensing is confusing as heck! [botDB](.) is meant to be a useful reference in its own right, but also one that can freely be incorporated into other projects. With this aim in mind:
 
-- the [botDB](.) website (and associated GitHub code repository) is licensed under the MIT License
-- elements of the [botDB](.) website and code fall under the licenses assigned by their respective creators, as described in the [full license](license/)
-- the [botDB](.) database (collected by and stored in Google Docs) is made available under the [Open Database License](http://opendatacommons.org/licenses/odbl/1.0/)
-- any rights in individual contents of the database are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
+- the [botDB](.) website and underlying code are licensed under the MIT License
+- parts of the [botDB](.) website and code fall under the licenses assigned by their respective creators, as described in the [full license](license/)
+- the [botDB](.) database and data hosted on Google Docs and any rights in individual entries therein are licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
 
-For user-contributed entries to the [botDB](.) database, copyright remains with the contributor but the content is licensed for use in accordance with [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/), in a similar manner to [Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Copyrights). (I hope.)
+Users who contribute to the [botDB](.) database retain copyright in anything they author, but agree to license their work for use in accordance with the above, in a similar fashion to [Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Copyrights). A link to [this page](.) is considered sufficient to meet the attribution requirements of the above.
 
 For further details, see the [full license](license/).
 
