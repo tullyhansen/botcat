@@ -66,8 +66,6 @@ Please get in touch if you have any questions, suggestions, concerns or [clumsy 
 - The [botDB](.) database and entries stored in Google Docs are licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). A link back to [this page](.) is considered sufficient attribution.
 - The [botDB](.) website and underlying code are licensed under the MIT License. Some parts of the website and code may fall under licenses assigned by their respective creators, as detailed in the [full license](license/).
 
-For further details, see the [full license](license/).
-
 ## Acknowledgements
 
 Thanks (in no particular order, and reserving the right to omissions) go to:
