@@ -36,7 +36,7 @@ Read on to find out [how it works](#how-it-works), [how to behave](#how-to-behav
 
 **[botDB](.) starts from a place of generosity, curiosity and respect towards bots and their makers, and [the maintainers of botDB](#who-to-complain-to) trust users and contributors to do the same.** This is the project's guiding principle. We are committed above all to the safety and self-determination of everyone contributing to or appearing in the database. With this in mind, a few explicit points:
 
-- **[botDB](.) most emphatically is not a 'bot(maker) doxxing database' or tool of harassment**, and any behaviour considered harassment will not be tolerated. We take as a guide the [LGBTQ in Tech Code of Conduct](http://lgbtq.technology/coc.html)'s definitions.
+- **[botDB](.) most emphatically is not a 'bot/maker doxxing database' or tool of harassment**, and any behaviour considered harassment will not be tolerated. We take as a guide the [LGBTQ in Tech Code of Conduct](http://lgbtq.technology/coc.html)'s definitions.
 - We strongly suggest that **all data submitted be sourced from readily available public materials**: public Twitter lists, botmaker blog posts, attribution in bot bios and so on.
 - If you're submitting entries on other people or their work, we strongly suggest you contact them to **seek and obtain explicit consent** before submitting.
 - Finally, **anyone may opt themselves and/or any or all of their work out of appearing in [botDB](.), at any time and without requiring explanation or further discussion, by contacting [the maintainers](#who-to-complain-to)**—we will endeavour to comply with such requests within 72 hours.
