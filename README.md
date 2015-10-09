@@ -17,7 +17,7 @@ sheet-url: foo
 - [botMEDIA](botMEDIA/), links to writing, talks, and news coverage on bots
 - [botMATERIALS](botMATERIALS/), for APIs, datasets, code and other botmaking bits
 
-Read on to find out [how it works](#how-it-works), [how to behave](#how-to-behave), [how to contribute](#how-to-contribute) and [how to get in touch](#who-to-complain-to). You'll also find [info on licensing](#licensing) and [acknowledgements](#acknowledgements). If you read nothing else, **[please read this bit](#how-to-behave).**
+Read on to find out [how it works](#how-it-works), [how to behave](#how-to-behave), [how to help](#how-to-help) and [how to get in touch](#who-to-complain-to). You'll also find [info on licensing](#licensing) and [acknowledgements](#acknowledgements). If you read nothing else, **[please read this bit](#how-to-behave).**
 
 ## How it works 
 
@@ -34,22 +34,24 @@ Read on to find out [how it works](#how-it-works), [how to behave](#how-to-behav
 
 ## How to behave
 
-**[botDB](.) starts from a place of generosity, curiosity and respect towards bots and their makers, and [the maintainers of botDB](#who-to-complain-to) trust users and contributors to do the same.** This is the project's guiding principle. We are committed above all to the safety and self-determination of everyone contributing to or appearing in the database. With this in mind, a few explicit points:
+**[botDB](.) starts from a place of generosity, curiosity and respect towards bots and their makers, and [the maintainers of botDB](#who-to-complain-to) trust users and contributors to do the same.** This is the project's guiding principle. With this in mind, a few explicit points:
 
-- **[botDB](.) most emphatically is not a 'bot/maker doxxing database' or tool of harassment**, and any behaviour considered harassment will not be tolerated. We take as a guide the [LGBTQ in Tech Code of Conduct](http://lgbtq.technology/coc.html)'s definitions.
+- **[botDB](.) most emphatically is not a 'bot/maker doxxing database' or tool of harassment**, and any such behaviour will not be tolerated. We take as our guide the definitions of harassment in the [LGBTQ in Tech Code of Conduct](http://lgbtq.technology/coc.html).
 - We strongly suggest that **all data submitted be sourced from readily available public materials**: public Twitter lists, botmaker blog posts, attribution in bot bios and so on.
 - If you're submitting entries on other people or their work, we strongly suggest you contact them to **seek and obtain explicit consent** before submitting.
-- Finally, **anyone may opt themselves and/or any or all of their work out of appearing in [botDB](.), at any time and without requiring explanation or further discussion, by contacting [the maintainers](#who-to-complain-to)**—we will endeavour to comply with such requests within 72 hours.
+- Finally, **anyone may opt themselves and/or any or all of their work out of appearing in [botDB](.), at any time and without further discussion, by contacting [the maintainers](#who-to-complain-to)**—we will endeavour to comply with such requests within 72 hours.
 
 Please [contact us](#who-to-complain-to) if you have any questions or concerns regarding [botDB](.), its usage or any of its contents.
 
-## How to contribute
+## How to help
 
 **2015-10-07: [botDB](.) is still very much ⚠️ UNDER CONSTRUCTION ⚠️ and doesn't (yet) work as intended. Once it does, the following will apply, but for now hang tight, or [get in touch](#who-to-complain-to)!**
 
-The simplest and most helpful thing is to **add entries to the database**! But be sure you've read up on [how to behave](#how-to-behave) first. You're encouraged to submit entries for yourself and your own bots, writing and tools, as well as for the work of others that you admire. This can be done using the Google Form embedded at the top of each section, which effectively publish 'live' to the site. You're also encouraged (though not required) to sign your name (or alias, Twitter handle, etc.) to your submissions.
+The most helpful thing you can do is to **add entries to the database**! But be sure you've read up on [how to behave](#how-to-behave) first. You're encouraged to submit entries for yourself and your own bots, writing and tools, as well as for the work of others that you admire. This can be done using the Google Form at the top of each section, which publish 'live' to the site. You're also encouraged (though not required) to sign your name (or alias, Twitter handle, etc.) to your submissions.
 
-If you'd like to **make improvements to the site** itself, and you have a GitHub account, you're welcome to [fork](https://guides.github.com/activities/forking/) the [botDB repo](https://github.com/tullyhansen/botDB/) – you'll [need Jekyll installed](http://jekyllrb.com/docs/installation/) if you want to run the site locally. Pull requests welcomed!
+If you'd like to **make improvements to the site** itself, and you have a GitHub account, you're welcome to [fork](https://guides.github.com/activities/forking/) the [botDB repo](https://github.com/tullyhansen/botDB/) – you'll [need Jekyll installed](http://jekyllrb.com/docs/installation/) if you want to run the site locally. Pull requests welcomed.
+
+Finally, please **share [botDB](.) with friends and fellow [\#botALLY](https://twitter.com/hashtag/botALLY?src=hash)**!
 
 ## Who to complain to
 
