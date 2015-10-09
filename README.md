@@ -34,7 +34,7 @@ Read on to find out [how it works](#how-it-works), [how to behave](#how-to-behav
 
 ## How to behave
 
-**[botDB](.) starts from a place of generosity, curiosity and respect towards bots and their makers, and [the maintainers of botDB](#who-to-complain-to) trust users and contributors to do the same.** This is the project's guiding principle. With this in mind, a few explicit points:
+**[botDB](.) starts from a place of generosity, curiosity and respect towards bots and their makers, and [the maintainers of botDB](#who-to-complain-to) trust users and contributors to do the same.** This is the project's guiding principle. Keeping this in mind, a few explicit points:
 
 - **[botDB](.) most emphatically is not a 'bot/maker doxxing database' or tool of harassment**, and any such behaviour will not be tolerated. We take as our guide the definitions of harassment in the [LGBTQ in Tech Code of Conduct](http://lgbtq.technology/coc.html).
 - We strongly suggest that **all data submitted be sourced from readily available public materials**: public Twitter lists, botmaker blog posts, attribution in bot bios and so on.
