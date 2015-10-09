@@ -75,6 +75,6 @@ For further details, see the [full license](license/).
 
 Thanks (in no particular order, and reserving the right to omissions) go to:
 
-- the [\#botALLY](http://botally.slack.com) and [Botmakers](http://botmakers.slack.com) Slacks, and their respective denizens
+- the [\#botALLY](https://docs.google.com/forms/d/13OMkyF7U1dcRPU4lsZC-gWcMT_-lN33Ql0aV2L-K-iA/viewform?c=0&w=1) and [Botmakers](http://botmakers.slack.com) Slacks, and their respective denizens
 
-<3
+`<3`
