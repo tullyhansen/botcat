@@ -47,17 +47,17 @@ Please [contact us](#who-to-complain-to) if you have any questions or concerns r
 
 **2015-10-07: [botDB](.) is still very much ⚠️ UNDER CONSTRUCTION ⚠️ and doesn't (yet) work as intended. Once it does, the following will apply, but for now hang tight, or [get in touch](#who-to-complain-to)!**
 
-The simplest and most helpful thing is to **add entries to the database**! But be sure to have read up on [how to behave](#how-to-behave) first. You're encouraged to submit entries for yourself and your own bots, writing and tools, as well as for the work of others that you admire. This can be done using the Google Forms embedded at the top of each section, which effectively publish 'live' to the site. You're also encouraged (though not required) to sign your name (or alias, Twitter handle, etc.) to your submissions.
+The simplest and most helpful thing is to **add entries to the database**! But be sure you've read up on [how to behave](#how-to-behave) first. You're encouraged to submit entries for yourself and your own bots, writing and tools, as well as for the work of others that you admire. This can be done using the Google Form embedded at the top of each section, which effectively publish 'live' to the site. You're also encouraged (though not required) to sign your name (or alias, Twitter handle, etc.) to your submissions.
 
 If you'd like to **make improvements to the site** itself, and you have a GitHub account, you're welcome to [fork](https://guides.github.com/activities/forking/) the [botDB repo](https://github.com/tullyhansen/botDB/) – you'll [need Jekyll installed](http://jekyllrb.com/docs/installation/) if you want to run the site locally. Pull requests welcomed!
 
 ## Who to complain to
 
-botDB is maintained by:
+[botDB](.) is currently maintained by:
 
 - [Tully Hansen](http://tullyhansen.com) ([@tullyhansen](http://twitter.com/tullyhansen) on Twitter)
 
-Please get in touch with questions, suggestions, concerns or [clumsy robot GIFs](http://www.funnyordie.com/articles/1cd2f27638/robots).
+Please get in touch if you have any questions, suggestions, concerns or [clumsy robot GIFs](http://www.funnyordie.com/articles/1cd2f27638/robots).
 
 ## Licensing
 
@@ -65,7 +65,7 @@ Licensing is confusing as heck! [botDB](.) is meant to be a useful reference in 
 
 - the [botDB](.) website and underlying code are licensed under the MIT License
 - parts of the [botDB](.) website and code fall under the licenses assigned by their respective creators, as described in the [full license](license/)
-- the [botDB](.) database and data hosted on Google Docs and any rights in individual entries therein are licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
+- the [botDB](.) database and Google Docs data (including any rights in individual entries therein) are licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
 
 Users who contribute to the [botDB](.) database retain copyright in anything they author, but agree to license their work for use in accordance with the above, in a similar fashion to [Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Copyrights). A link to [this page](.) is considered sufficient to meet the attribution requirements of the above.
 
