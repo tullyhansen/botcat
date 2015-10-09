@@ -34,17 +34,14 @@ Read on to find out [how it works](#how-it-works), [how to behave](#how-to-behav
 
 ## How to behave
 
-**[botDB](.) comes from a place of generosity, curiosity and respect towards bots and their makers**, and [the maintainers of botDB](#who-to-complain-to) trust users and contributors to do the same. The following guidelines are to keep the database useful, usable and safe for everyone, and are subject to change in line with this guiding principle. If they are anywhere unclear, insufficiently detailed or otherwise lacking, please [let us know](#who-to-complain-to)!
+**[botDB](.) starts from a place of generosity, curiosity and respect towards bots and their makers, and [the maintainers of botDB](#who-to-complain-to) trust users and contributors to do the same.** This is the project's guiding principle. We are committed above all to the safety and self-determination of everyone contributing to or appearing in the database. With this in mind, a few explicit points:
 
-**[botDB](.) most emphatically is not a 'bot(maker) doxxing database' or tool of harassment**. Harassment in any form, including but not limited to offensive comments relating to gender, gender identity and expression, sexual orientation, disability, mental illness, neuro(a)typicality, physical appearance, body size, race, immigration status, religion, or other identity markers, will not be tolerated, and will be removed [by the maintainers](#who-to-complain-to) at the earliest opportunity.
+- **[botDB](.) most emphatically is not a 'bot(maker) doxxing database' or tool of harassment**, and any behaviour considered harassment will not be tolerated. We take as a guide the [LGBTQ in Tech Code of Conduct](http://lgbtq.technology/coc.html)'s definitions.
+- We strongly suggest that **all data submitted be sourced from readily available public materials**: public Twitter lists, botmaker blog posts, attribution in bot bios and so on.
+- If you're submitting entries on other people or their work, we strongly suggest you contact them to **seek and obtain explicit consent to do so** before submitting.
+- Finally, **anyone may opt themselves and/or any or all of their work out of appearing in [botDB](.), at any time and without requiring explanation or further discussion, by contacting [the maintainers](#who-to-complain-to)**—we will endeavour to comply with such requests within 72 hours.
 
-[The maintainers of botDB](#who-to-complain-to) uphold the right of everyone in [botDB](.) (contributor or not) to assert the name (or alias) and pronouns by which they be addressed, and will make every effort to ensure these are used accordingly throughout. Similarly, [we](#who-to-complain-to) uphold the right of everyone (contributor or not) to request changes to any entry with which they are not completely comfortable, and for any such changes to be negotiated and put into place in a timely way.
-
-Though it may seem harmless, even fun to speculate on or investigate anonymous or pseudonymous authors and works ([arguable, at best](http://www.slate.com/articles/technology/technology/2012/03/ruby_ruby_on_rails_and__why_the_disappearance_of_one_of_the_world_s_most_beloved_computer_programmers_.single.html)), [we](#who-to-complain-to) neither encourage nor condone such behaviour, and we suggest in the strongest terms that **all data submitted should be sourced from readily available public materials**: public Twitter lists, botmaker blog posts, attribution in bot bios and so on.
-
-Finally, given [botDB](.) may contain information on people who have not explicitly consented to appear in the database, **anyone may opt themselves and/or any or all of their work out of appearing in [botDB](.), at any time and without requiring explanation or further discussion, by contacting [the maintainers](#who-to-complain-to)**. We will endeavour to comply with any and all requests in relation any of the above **within 48 hours**.
-
-_Parts of this section have been adapted from the [LGBTQ in Tech Code of Conduct](http://lgbtq.technology/coc.html)._
+Please [contact us](#who-to-complain-to) if you have any questions or concerns regarding [botDB](.), its usage or any of its contents.
 
 ## How to contribute
 
