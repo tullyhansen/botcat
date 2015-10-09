@@ -61,13 +61,10 @@ Please get in touch if you have any questions, suggestions, concerns or [clumsy 
 
 ## Licensing
 
-Licensing is confusing as heck! [botDB](.) is meant to be a useful reference in its own right, but also one that can freely be incorporated into other projects. With this aim in mind:
+[botDB](.) is meant to be a useful reference in its own right, but also one that can freely be incorporated into other projects. Contributors retain copyright on any original contributions but agree to license their work in accordance with the following:
 
-- the [botDB](.) website and underlying code are licensed under the MIT License
-- parts of the [botDB](.) website and code fall under the licenses assigned by their respective creators, as described in the [full license](license/)
-- the [botDB](.) database and Google Docs data (including any rights in individual entries therein) are licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
-
-Users who contribute to the [botDB](.) database retain copyright in anything they author, but agree to license their work for use in accordance with the above, in a similar fashion to [Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Copyrights). A link to [this page](.) is considered sufficient to meet the attribution requirements of the above.
+- The [botDB](.) database and entries stored in Google Docs are licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). A link back to [this page](.) is considered sufficient attribution.
+- The [botDB](.) website and underlying code are licensed under the MIT License. Some parts of the website and code may fall under licenses assigned by their respective creators, as detailed in the [full license](license/).
 
 For further details, see the [full license](license/).
 
