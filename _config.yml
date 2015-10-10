@@ -14,8 +14,9 @@ description: >       # this means to ignore newlines until "url:"
                      a directory of bots, allies, media and materials
 url:                 http://tullyhansen.github.io
 baseurl:             /botDB
-paginate:            5
 twitter_username:    botALLY
+
+# Custom
 theme:               theme-base-0d
 
 # About/contact
