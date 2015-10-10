@@ -81,11 +81,17 @@ $('#tweetLink').on('input', function() {
 </script> -->
 
 
-{% for item in page.exhibit_data_URLs %}
-{% assign first_character = item | truncate: 1, '' == '/' %}
-<link rel="exhibit-data" type="application/json{% if first_character != '/' %}p{% endif %}" href="{% if first_character == '/' %}{{ site.baseurl }}{% endif %}{{ item }}"{% if item contains 'google.com' %} data-ex-converter="googleSpreadsheets"{% endif %} />
-{% endfor %}
-
+{% if page.exhibit_data_URLs_test %}
+	{% for item in page.exhibit_data_URLs_test %}
+		{% assign first_character = item | truncate: 1, '' == '/' %}
+		<link rel="exhibit-data" type="application/json{% if first_character != '/' %}p{% endif %}" href="{% if first_character == '/' %}{{ site.baseurl }}{% endif %}{{ item }}"{% if item contains 'google.com' %} data-ex-converter="googleSpreadsheets"{% endif %} />
+	{% endfor %}
+{% else %}
+	{% for item in page.exhibit_data_URLs %}
+		{% assign first_character = item | truncate: 1, '' == '/' %}
+		<link rel="exhibit-data" type="application/json{% if first_character != '/' %}p{% endif %}" href="{% if first_character == '/' %}{{ site.baseurl }}{% endif %}{{ item }}"{% if item contains 'google.com' %} data-ex-converter="googleSpreadsheets"{% endif %} />
+	{% endfor %}
+{% endif %}
 	
 	<style>
 
