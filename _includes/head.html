@@ -1,4 +1,4 @@
-
+<head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -79,6 +79,13 @@ $('#tweetLink').on('input', function() {
                 }
 })
 </script> -->
+
+
+{% for item in page.exhibit_data_URLs %}
+{% assign first_character = item | truncate: 1, '' == '/' %}
+<link rel="exhibit-data" type="application/json{% if first_character != '/' %}p{% endif %}" href="{% if first_character == '/' %}{{ site.baseurl }}{% endif %}{{ item }}"{% if item contains 'google.com' %} data-ex-converter="googleSpreadsheets"{% endif %} />
+{% endfor %}
+
 	
 	<style>
 
@@ -94,3 +101,4 @@ $('#tweetLink').on('input', function() {
 /*    div.exhibit-facet-value {clear: none;} !important*/
     </style> 
     
+</head>
