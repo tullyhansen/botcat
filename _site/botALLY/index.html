@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-  
+  <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -80,6 +79,10 @@ $('#tweetLink').on('input', function() {
                 }
 })
 </script> -->
+
+
+
+
 	
 	<style>
 
@@ -95,13 +98,7 @@ $('#tweetLink').on('input', function() {
 /*    div.exhibit-facet-value {clear: none;} !important*/
     </style> 
     
-
-  <!-- bots tab of botsDB Google Sheet -->
-	<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1vleb6Y37ctkjlWbCiTemABgpit83eqW1FT8HEwc0l9I/1/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
-<!-- botMakers tab of botsDB Google Sheet -->
-	<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1vleb6Y37ctkjlWbCiTemABgpit83eqW1FT8HEwc0l9I/2/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
-	<link href="/js/schema.js" type="application/json" />
-<!-- 		<link href="/js/schema.js" type="application/json" rel="exhibit-data" /> -->
+</head>
   <body class="theme-base-0d">
 
     <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
@@ -189,17 +186,25 @@ $('#tweetLink').on('input', function() {
     
       
         
-      
-    
-      
+          <a class="sidebar-nav-item" href="/botDB/bots/">bots</a>
         
       
     
       
         
+          <a class="sidebar-nav-item active" href="/botDB/botALLY/">botALLY</a>
+        
       
     
       
+        
+          <a class="sidebar-nav-item" href="/botDB/botMEDIA/">botMEDIA</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/botDB/botMATERIALS/">botMATERIALS</a>
         
       
     
@@ -239,7 +244,6 @@ $('#tweetLink').on('input', function() {
 
       <div class="container content">
         <div class="page">
-  <h1 class="page-title">botALLY</h1>
     <div id="main-content">
 	<div id="title-panel">
 <!--working tweet embeds
