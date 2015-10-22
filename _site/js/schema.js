@@ -28,28 +28,8 @@
         "url": {
             "valueType": "url"
         },
-        "presidency": {
-            "valueType":              "item"
-        },
-        "term": {
-            "valueType":              "number"
-        },
-        "inDate": {
-            "valueType":              "date",
-            "label":                  "in office"
-        },
-        "outDate": {
-            "valueType":              "date",
-            "label":                  "out office"
-        },
         "birth": {
             "valueType":              "date"
-        },
-        "death": {
-            "valueType":              "date"
-        },
-        "creators": {
-            "valueType":"botally"
         },
         "followers_count": {
             "valueType":"number",
