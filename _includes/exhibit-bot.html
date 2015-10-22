@@ -1,9 +1,13 @@
 <div id="main-content">
 	<div id="title-panel">
-<!--working tweet embeds
- 		<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Twitterbot bulletin board <a href="https://twitter.com/hashtag/botALLY?src=hash">#botALLY</a> <a href="https://twitter.com/hashtag/edtech?src=hash">#edtech</a> <a href="https://twitter.com/hashtag/kidscancode?src=hash">#kidscancode</a> <a href="http://t.co/tc9Hhr0683">http://t.co/tc9Hhr0683</a> <a href="http://t.co/ydru7UnRf2">pic.twitter.com/ydru7UnRf2</a></p>&mdash; Justin Riley (@20hz20khz) <a href="https://twitter.com/20hz20khz/status/648201676986404865">September 27, 2015</a></blockquote></p>
+
+<!-- 
+working tweet embeds
+ 		
 		<p><blockquote class="twitter-tweet" lang="en"><a href="https://twitter.com/20hz20khz/status/648201676986404865"></a></blockquote></p>
-		<p><blockquote class="twitter-tweet" lang="en"><a href="https://twitter.com/Veeren_Jubbal/status/649061449646653440"></a></blockquote></p>-->
+		<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Twitterbot bulletin board <a href="https://twitter.com/hashtag/botALLY?src=hash">#botALLY</a> <a href="https://twitter.com/hashtag/edtech?src=hash">#edtech</a> <a href="https://twitter.com/hashtag/kidscancode?src=hash">#kidscancode</a> <a href="http://t.co/tc9Hhr0683">http://t.co/tc9Hhr0683</a> <a href="http://t.co/ydru7UnRf2">pic.twitter.com/ydru7UnRf2</a></p>&mdash; Justin Riley (@20hz20khz) <a href="https://twitter.com/20hz20khz/status/648201676986404865">September 27, 2015</a></blockquote></p>
+		<p><blockquote class="twitter-tweet" lang="en"><a href="https://twitter.com/Veeren_Jubbal/status/649061449646653440"></a></blockquote></p>
+ -->
 	</div>
 	<div id="top-panels">
 		<table width="100%">
@@ -27,30 +31,68 @@
 	</div>
 	<div data-ex-role="viewPanel">
 
-<!--     <div data-ex-role="collection" data-ex-item-types="Item"></div> -->
-		            <table data-ex-role="lens" class="botmaker" style="display: none;"><tr>
-                <td style="width: 3rem;"><img class="bot-thumbnail-img" data-ex-src-content=".profile_image_url" alt="portrait" /></td>
-                <td>
-                    @<a data-ex-href-content=".label" data-ex-content=".label" class="name"></a>
-                    <div data-ex-if-exists=".description" class="description">
-                        <span data-ex-content=".description"></span>
-                    </div>
-                </td>
-            </tr></table>
+		<ul data-ex-role="lens" class="botmaker" style="display: none; padding-left: 0;" data-ex-if="contains(.type, 'bot')">
+<!--       <div data-ex-case="bot">the .type = bot case</div>
+       <div data-ex-case="botally">the .type = botally case</div>
+       <div data-ex-case="botmedia">the .type = botmedia case</div>
+       <div data-ex-case="botmaterials">the .type = botmaterials case</div>
+       <div>the catchall case</div>
+
+       <li data-ex-case="bot">the .type = bot case</li>
+       <li data-ex-case="botally">the .type = botally case</li>
+       <li data-ex-case="botmedia">the .type = botmedia case</li>
+       <li data-ex-case="botmaterials">the .type = botmaterials case</li>
+       <li>the catchall case</li>
+ -->
+	
+			<li style="list-style-type: none; padding-left: 0;">
+			    <div class="bot-thumbnail-img" style="width: 3rem; float: right;">
+                	<img class="bot-thumbnail-img" data-ex-src-content=".profile_image_url" alt="portrait" />
+                </div>
+				<div class="handle">
+					<h2><a data-ex-href-subcontent="https://twitter.com/{&#123;.label}}" target="_blank" data-ex-content="concat('@', .label)"></a><span data-ex-if-exists=".followers_count" class="followers_count"> (<span data-ex-content=".followers_count"></span> follower<span data-ex-if="not(contains(.followers_count, '1'))"><span>s</span></span>)</span></h2>
+				</div>
+				<div data-ex-if-exists=".createdBy" class="createdBy">
+					A <span data-ex-content=".type"></span> by <ul data-ex-content=".createdBy" class="createdBy"><li><a data-ex-href-subcontent="https://twitter.com/{&#123;value}}" target="_blank" data-ex-content="concat('@', value)"></a></li></ul>.
+				</div>
+				<div data-ex-if-exists=".description" class="description" style="clear: left;">
+					<blockquote data-ex-content=".description"></blockquote>
+				</div>
+<!--		<div data-ex-if-exists=".recentTweet" class="recentTweet">
+					<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Nearly One-third of Consumers Would Give Up Their Car Before Their Smartphone <a href="https://t.co/BVU0Kaalh3">https://t.co/BVU0Kaalh3</a></p>&mdash; Slashdot (@slashdot) <a href="https://twitter.com/slashdot/status/656716147438411776">October 21, 2015</a></blockquote>
+				</div> -->
+				<div data-ex-if-exists=".tweetableDescription" style="font-style: italic;">
+					<span data-ex-content=".tweetableDescription"></span>
+					<!-- Getting close… <a href="https://twitter.com/share" class="twitter-share-button" data-url="" data-text="I just looked up a bot in botDB!" data-hashtags="botDB">Tweet</a> -->
+				</div>
+            </li>	
+			<li style="list-style-type: none; padding-left: 0;">
+			    <div class="bot-thumbnail-img" style="width: 3rem; float: right;">
+                	<img class="bot-thumbnail-img" data-ex-src-content=".profile_image_url" alt="portrait" />
+                </div>
+				<div class="handle">
+					<h2><span data-ex-content=".type"></span> <a data-ex-href-subcontent="https://twitter.com/{&#123;.label}}" target="_blank" data-ex-content="concat('@', .label)"></a><span data-ex-if-exists=".followers_count" class="followers_count"> (<span data-ex-content=".followers_count"></span> follower<span data-ex-if="not(contains(.followers_count, '1'))"><span>s</span></span>)</span></h2>
+				</div>
+            </li>	
+
+			<div style="padding:.5rem; clear: both; text-align: center;">
+				🤖
+			</div>
+        </ul>
 
 		<div data-ex-role="view" data-ex-label="List" data-ex-orders=".label" data-ex-possible-orders=".label, .twitter_id, .followers_count, .friends_count, .statuses_count, .last_status_created_at, .account_created_at" data-ex-show-all="false">
-
-<!-- From http://nielsmayer.com/xwiki/bin/get/Exhibit/pods -->
+			<!-- From http://nielsmayer.com/xwiki/bin/get/Exhibit/pods -->
 		</div>
+
 		<div data-ex-role="view" data-ex-view-class="Thumbnail" data-ex-show-all="true" data-ex-orders=".label" data-ex-possible-orders=".label, .twitter_id, .followers_count, .friends_count, .statuses_count, .last_status_created_at, .account_created_at">
 			<div data-ex-role="lens" class="bot-thumbnail" style="display:none;">
-				<img data-ex-src-content=".profile_image_url" /><a data-ex-href-subcontent="https://twitter.com/{{.label}}"> 
-				<div>
-					@<span data-ex-content=".label"></span></a> 
-				</div>
+				<img data-ex-src-content=".profile_image_url" /><a data-ex-href-subcontent="https://twitter.com/{&#123;.label}}" target="_blank" data-ex-content="concat('@', .label)"></a>
 			</div>
 		</div>
+
 		<div data-ex-role="view" data-ex-view-class="Tabular" data-ex-columns=".label, .twitter_id, .followers_count, .friends_count, .statuses_count, .last_status_created_at, .account_created_at" data-ex-column-labels="Who,Role,Where?,Tweet">
+
+		
 		</div>
 
 <!-- 
@@ -68,12 +110,4 @@
 			 </div>
  -->
 	</div>
-<!-- 
-
-                            <div data-ex-role="view"
-                data-ex-label="Details"
-                data-ex-view-class="Tile"
-                data-ex-show-all="true">
-            </div>
- -->
 </div>

@@ -40,6 +40,9 @@
 	      
 <!-- 	      From https://dev.twitter.com/web/javascript/loading -->
 	      
+	      <script>function tweet(message) {
+    window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(message), 'Tweet');}</script>
+	      
 	      <script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
     t = window.twttr || {};
@@ -105,6 +108,40 @@ $('#tweetLink').on('input', function() {
  */
     div.exhibit-facet-value-checkbox img {margin: 0;}
 /*    div.exhibit-facet-value {clear: none;} !important*/
+
+
+
+.createdBy ul {
+  display: inline;
+  list-style: none;
+  padding-left: 0;
+}
+
+.createdBy ul li {
+  display: inline;
+}
+
+.createdBy ul li:after {
+  content: " & ";
+}
+.createdBy ul li:last-child:after {
+    content: "";
+}
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+.exhibit-action span img {
+	display: inline;
+	position: relative;
+	top: .2rem;
+}
+
+.exhibit-facet-value-checkbox img {
+	display: inline;
+}
+
     </style> 
     
 </head>
