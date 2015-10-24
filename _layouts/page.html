@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-{% if page.exhibit_data_URLs_test %}<h1>⚠️ TEST DATA LOADED ⚠️</h1>{% endif %}
+{% if page.exhibit_data_URLs_test %}<h1>Test data loaded. ⚠️</h1>{% endif %}
 <div class="page">
+{% if page.exhibit_data_URLs_test != null or page.exhibit_data_URLs != null %}<div class="exhibit">{% endif %}
   {{ content }}
+{% if page.exhibit_data_URLs_test != null or page.exhibit_data_URLs != null %}</div>{% endif %}
 </div>
