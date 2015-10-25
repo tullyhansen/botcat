@@ -406,7 +406,27 @@ padding-bottom: 1rem;
 			</div>
 	</div>
  -->
-	<div data-ex-role="view" data-ex-collection-i-d="botmaterials" data-ex-view-class="Tabular" data-ex-label="List View" data-ex-columns=".name, value, .created-by, .twitter_id, .followers_count, .friends_count, .statuses_count, .last_status_created_at, .account_created_at" data-ex-column-labels="Who,Role,Where?,Tweet" style="display: block; overflow: scroll;">
+	<div data-ex-role="view" data-ex-collection-i-d="botmaterials" data-ex-view-class="Tabular" data-ex-label="List View" data-ex-columns=".name, value, .created-by, .account_created_at" data-ex-column-labels="Who,Role,Where?,Tweet" style="display: block; overflow: scroll;">
+	   <table style="display: none;"> 
+			<tr> 
+				<td>
+					<span data-ex-select=".type">
+					  <span data-ex-case="botmedia">media</span>
+					  <span data-ex-case="bots">bot</span>
+					  <span data-ex-content=".offering" class="no-offering">god</span>
+					</span>
+<!-- 
+					<span data-ex-if="contains(.type, 'botmedia')">
+					  <span class="hasfinal"> media</span>
+					  <span></span>
+					</span>
+ -->
+				</td> 
+				<td><span data-ex-content="value"></span></td> 
+				<td><span data-ex-content=".created-by"></span></td> 
+				<td><span data-ex-content=".account_created_at"></span></td> 
+			</tr> 
+		</table>
 	</div>
 	<div data-ex-role="view" data-ex-collection-i-d="botmaterials" data-ex-view-class="Tile" data-ex-label="Detailed View" data-ex-orders=".label" data-ex-possible-orders=".label, .twitter_id, .followers_count, .friends_count, .statuses_count, .last_status_created_at, .account_created_at">
 	</div>
