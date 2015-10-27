@@ -116,98 +116,75 @@ $('#tweetLink').on('input', function() {
 	{% endif %}
 {% endif %}
 	
-	<style>
+<style>
 
-    .bot-thumbnail {margin:5px; padding:10px; width:140px;}
-    .bot-thumbnail img {width: 48px; height: 48px;}
-    .exhibit-toolboxWidget-popup.screen {position:relative; top: 0; right: 0;}
-.exhibit-facet-header-filterControl {width: 0;}
-.exhibit-facet-header {height: 3.5rem;}
-/* 
-    table * img {margin: 0;}
- */
-    div.exhibit-facet-value-checkbox img {margin: 0;}
-/*    div.exhibit-facet-value {clear: none;} !important*/
-
-
-
-.createdBy ul {
-  display: inline;
-  list-style: none;
-  padding-left: 0;
+.bot-thumbnail img {
+    width: 48px;
+    height: 48px;
+    float: left;
 }
 
-.createdBy ul li {
-  display: inline;
+.exhibit-toolboxWidget-popup.screen {
+    position: relative;
+    top: 0;
+    right: 0;
 }
 
-.createdBy ul li:after {
-  content: " & ";
+.exhibit-facet-header-filterControl {
+    width: 0;
 }
-.createdBy ul li:last-child:after {
-    content: "";
+
+.exhibit-facet-header {
+    height: 3.5rem;
 }
+
 ol {
-  list-style: none;
-  padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 .exhibit-action span img {
-	display: inline;
-	position: relative;
-	top: .2rem;
+    display: inline;
+    position: relative;
+    top: .2rem;
 }
 
-.exhibit-facet-value-checkbox img {
-	display: inline;
+.exhibit-facet-value-checkbox img,.exhibit-facet-header-filterControl img {
+    margin: .2rem;
 }
 
-span.exhibit-collectionSummaryWidget-count {
-	font-size: 100% !important;
-	font-weight: bold;
+.exhibit-collectionSummaryWidget-count {
+    font-size: 100%/* !important*/;
+    font-weight: 700;
 }
 
 .bot-thumbnail {
-	display: inline;
-	margin:0;
-	border:0;
-	padding:0;
-}
-.bot-thumbnail img {
-	margin:0;
+	margin: 0;
+    border: 0;
+    padding: 0;
 }
 
-div.bot-thumbnail {
-	display: inline;
+.exhibit-thumbnailView-itemContainer {
+    width: 48px;
+    height: 48px;
 }
 
-div.exhibit-thumbnailView-itemContainer {
-	width: 48px;
-	height: 48px;
+.exhibit-toolboxWidget-button,.exhibit-bookmarkWidget-button {
+    float: right;
 }
 
-/* 
-div.simileAjax-bubble-contentContainer.simileAjax-bubble-contentContainer-pngTranslucent {
-	padding: 1rem;
-}
- */
-
-img.exhibit-toolboxWidget-button, img.exhibit-bookmarkWidget-button {
-	float: right;
+.exhibit-text-facet input {
+    font-size: 100%;
 }
 
-div.exhibit-text-facet input {
-	font-size: 100%;
-}
-
- div.searchbox, div.exhibit-viewPanel-viewSelection {
-padding-bottom: 1rem;
+.searchbox,.exhibit-viewPanel-viewSelection {
+    padding-bottom: 1rem;
 }
 
 .exhibit img {
-	display: inline;
+    display: inline;
+    margin: 0;
 }
 
-    </style> 
-    
+</style>     
 </head>
