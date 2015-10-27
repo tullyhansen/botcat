@@ -30,9 +30,6 @@
   <!-- Tully's messy crap -->
 <!-- Adapted from http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/ -->
 
-<!-- Exhibit 3.0 from http://api.simile-widgets.org/exhibit/STABLE/exhibit-api.js & http://api.simile-widgets.org/exhibit/STABLE/extensions/time/time-extension.js -->
-
-	<script src="//api.simile-widgets.org/exhibit/HEAD/exhibit-api.js" type="text/javascript"></script>
 <!-- 	<script src="/js/exhibit-3.1.0/exhibit-api.js" type="text/javascript"></script> -->
 
 <!-- not using timeline (yet) so commenting out
@@ -85,15 +82,28 @@ $('#tweetLink').on('input', function() {
 
 
 
+<!-- 
+
+ -->
+
+
+	<script src="//api.simile-widgets.org/exhibit/HEAD/exhibit-api.js" type="text/javascript"></script>
+<!-- 	<script src="//api.simile-widgets.org/exhibit/HEAD/extensions/time/time-extension.js" type="text/javascript"></script> -->
+	<link rel="exhibit-data" type="application/json" href="/botDB/js/schema.js" />
 	
 		
-		<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1vleb6Y37ctkjlWbCiTemABgpit83eqW1FT8HEwc0l9I/1/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
-	
+				
+				<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1JA6m8kky86NJaArUMs1KMLeIEFMtY_ZL9uuCV-30GTU/1/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
 		
-		<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1vleb6Y37ctkjlWbCiTemABgpit83eqW1FT8HEwc0l9I/2/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
-	
+				
+				<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1JA6m8kky86NJaArUMs1KMLeIEFMtY_ZL9uuCV-30GTU/2/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
 		
-		<link rel="exhibit-data" type="application/json" href="/botDB/js/schema.js" />
+				
+				<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1JA6m8kky86NJaArUMs1KMLeIEFMtY_ZL9uuCV-30GTU/3/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
+		
+				
+				<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1JA6m8kky86NJaArUMs1KMLeIEFMtY_ZL9uuCV-30GTU/4/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
+		
 	
 
 	
@@ -336,10 +346,25 @@ padding-bottom: 1rem;
       </div>
 
       <div class="container content">
-        
-<div class="page">
-<div class="exhibit">
-    <div data-ex-role="exhibit-collection" id="bots" data-ex-item-types="bot"></div>
+        <div class="page exhibit">
+  <h1 class="page-title">#bots</h1>
+  <!-- 
+<div class="posts">
+  
+</div>
+
+<div class="pagination">
+  
+    <span class="pagination-item older">Older</span>
+  
+  
+    <span class="pagination-item newer">Newer</span>
+  
+</div>
+ -->
+
+
+  <div data-ex-role="exhibit-collection" id="bots" data-ex-item-types="bot"></div>
 <div data-ex-role="exhibit-collection" id="botally" data-ex-item-types="botally"></div>
 <div data-ex-role="exhibit-collection" id="botmedia" data-ex-item-types="botmedia"></div>
 <div data-ex-role="exhibit-collection" id="botmaterials" data-ex-item-types="botmaterials"></div>
@@ -360,8 +385,7 @@ padding-bottom: 1rem;
 		</tr>
 	</table>
  -->
-	<div>Search:
-	</div>
+	<div>Filter results using the search box below:</div>
 	<div class="searchbox" data-ex-role="facet" data-ex-collection-i-d="bots" data-ex-facet-class="TextSearch" data-ex-style="font-size: 1rem;">
 	</div>
 </div>
@@ -395,7 +419,7 @@ padding-bottom: 1rem;
 	<div data-ex-role="lens" data-ex-item-types="botally" style="display: none; padding-left: 0;">
 		<div class="handle">
 			<h2 style="margin-top: .2rem;"><a data-ex-href-subcontent="https://twitter.com/{&#123;.label}}" target="_blank" data-ex-content="concat('@', .label)"></a>, #botALLY</h2>
-<span data-ex-content="!created-by"  data-ex-item-types="botmaterials"><ul><li data-ex-content="value"></li></ul></span>
+<span data-ex-content="!created-by"><ul><li data-ex-content="value"></li></ul></span>
 		</div>
 	</div>
 	<div data-ex-role="lens" data-ex-item-types="botmedia" style="display: none; padding-left: 0;">
@@ -427,7 +451,7 @@ padding-bottom: 1rem;
 					   <div data-ex-case="botmaterials">the .type = botmaterials case</div>
 					   <div>the catchall case</div>
 					</div>
-					<div data-ex-content=".type"></div>
+					<div 	.type"></div>
 
 <!-- 
 					<span data-ex-select=".type">
@@ -471,23 +495,6 @@ padding-bottom: 1rem;
 		 </div>
 		 </div>
 -->
-</div>
-<!-- 
-<div class="posts">
-  
-</div>
-
-<div class="pagination">
-  
-    <span class="pagination-item older">Older</span>
-  
-  
-    <span class="pagination-item newer">Newer</span>
-  
-</div>
- -->
-
-
 </div>
 </div>
 
