@@ -30,17 +30,19 @@
   <!-- Tully's messy crap -->
 <!-- Adapted from http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/ -->
 
-<!-- 	<script src="/js/exhibit-3.1.0/exhibit-api.js" type="text/javascript"></script> -->
-
-<!-- not using timeline (yet) so commenting out
-	<script src="/js/time-extension.js" type="text/javascript"></script> -->
-	      
 <!-- 	      From https://dev.twitter.com/web/javascript/loading -->
 	      
+
+<!-- 
 	      <script>function tweet(message) {
     window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(message), 'Tweet');}</script>
+ -->
+ 
+ 
+<script src="/botDB/js/twitter-embed.js" type="text/javascript" defer></script>
 	      
-	      <script>window.twttr = (function(d, s, id) {
+<!-- 
+<script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
     t = window.twttr || {};
   if (d.getElementById(id)) return t;
@@ -56,6 +58,8 @@
  
   return t;
 }(document, "script", "twitter-wjs"));</script>
+ -->
+
 	      
 <!-- 
 	      From http://stackoverflow.com/questions/16973726/allow-users-to-embed-tweets-using-only-url
@@ -82,127 +86,116 @@ $('#tweetLink').on('input', function() {
 
 
 
-<!-- 
-
- -->
 
 
-	<script src="//api.simile-widgets.org/exhibit/HEAD/exhibit-api.js" type="text/javascript"></script>
-<!-- 	<script src="//api.simile-widgets.org/exhibit/HEAD/extensions/time/time-extension.js" type="text/javascript"></script> -->
+
+	<script src="//api.simile-widgets.org/exhibit/HEAD/exhibit-api.js?autoCreate=true" type="text/javascript"></script>
 	<link rel="exhibit-data" type="application/json" href="/botDB/js/schema.js" />
 	
 		
 				
 				<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1JA6m8kky86NJaArUMs1KMLeIEFMtY_ZL9uuCV-30GTU/1/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
 		
-				
-				<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1JA6m8kky86NJaArUMs1KMLeIEFMtY_ZL9uuCV-30GTU/2/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
-		
-				
-				<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1JA6m8kky86NJaArUMs1KMLeIEFMtY_ZL9uuCV-30GTU/3/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
-		
-				
-				<link rel="exhibit-data" type="application/jsonp" href="https://spreadsheets.google.com/feeds/list/1JA6m8kky86NJaArUMs1KMLeIEFMtY_ZL9uuCV-30GTU/4/public/values?alt=json-in-script" data-ex-converter="googleSpreadsheets" />
-		
 	
+	
+	
+	<script>
+		onLoad = function () {
+			console.log("onLoad got called correctly!");
+			var s, f, fDone;
+			fDone = function() {
+				window.exhibit = Exhibit.create();
+				window.exhibit.configureFromDOM();
+			};
+			console.log("Made it to try block!");
+			try {
+				s = Exhibit.getAttribute(document.body, "ondataload");
+				if (s !== null && typeof s === "string" && s.length > 0) {
+					f = eval(s);
+					if (typeof f === "function") {
+						fDone = f;
+					}
+				}
+			} catch (e) {
+				Exhibit.Debug.warn(Exhibit._("%general.error.dataloadExecution"));
+				Exhibit.Debug.warn(e);
+			};
+			console.log("Made it through try block!");
+			Exhibit.jQuery(document.body).one("dataload.exhibit", fDone);
+			window.database = Exhibit.Database.create();
+			window.database.loadLinks();
+			console.log("Made it to the end of onLoad!");
+		};
+	</script>
+
+
 
 	
-	<style>
+<style>
 
-    .bot-thumbnail {margin:5px; padding:10px; width:140px;}
-    .bot-thumbnail img {width: 48px; height: 48px;}
-    .exhibit-toolboxWidget-popup.screen {position:relative; top: 0; right: 0;}
-.exhibit-facet-header-filterControl {width: 0;}
-.exhibit-facet-header {height: 3.5rem;}
-/* 
-    table * img {margin: 0;}
- */
-    div.exhibit-facet-value-checkbox img {margin: 0;}
-/*    div.exhibit-facet-value {clear: none;} !important*/
-
-
-
-.createdBy ul {
-  display: inline;
-  list-style: none;
-  padding-left: 0;
+.bot-thumbnail img {
+    width: 48px;
+    height: 48px;
+    float: left;
 }
 
-.createdBy ul li {
-  display: inline;
+.exhibit-toolboxWidget-popup.screen {
+    position: relative;
+    top: 0;
+    right: 0;
 }
 
-.createdBy ul li:after {
-  content: " & ";
-}
-.createdBy ul li:last-child:after {
-    content: "";
-}
 ol {
-  list-style: none;
-  padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 .exhibit-action span img {
-	display: inline;
-	position: relative;
-	top: .2rem;
+    display: inline;
+    position: relative;
+    top: .2rem;
 }
 
-.exhibit-facet-value-checkbox img {
-	display: inline;
+.exhibit-facet-value-checkbox img,.exhibit-facet-header-filterControl img {
+    margin: .2rem;
 }
 
-span.exhibit-collectionSummaryWidget-count {
-	font-size: 100% !important;
-	font-weight: bold;
+.exhibit-collectionSummaryWidget-count {
+    font-size: 100%/* !important*/;
+    font-weight: 700;
 }
 
 .bot-thumbnail {
-	display: inline;
-	margin:0;
-	border:0;
-	padding:0;
-}
-.bot-thumbnail img {
-	margin:0;
+	margin: 0;
+    border: 0;
+    padding: 0;
 }
 
-div.bot-thumbnail {
-	display: inline;
+.exhibit-thumbnailView-itemContainer {
+    width: 48px;
+    height: 48px;
 }
 
-div.exhibit-thumbnailView-itemContainer {
-	width: 48px;
-	height: 48px;
+.exhibit-toolboxWidget-button,.exhibit-bookmarkWidget-button {
+    float: right;
 }
 
-/* 
-div.simileAjax-bubble-contentContainer.simileAjax-bubble-contentContainer-pngTranslucent {
-	padding: 1rem;
-}
- */
-
-img.exhibit-toolboxWidget-button, img.exhibit-bookmarkWidget-button {
-	float: right;
+.exhibit-text-facet input {
+    font-size: 100%;
 }
 
-div.exhibit-text-facet input {
-	font-size: 100%;
-}
-
- div.searchbox, div.exhibit-viewPanel-viewSelection {
-padding-bottom: 1rem;
+.searchbox,.exhibit-viewPanel-viewSelection {
+    padding-bottom: 1rem;
 }
 
 .exhibit img {
-	display: inline;
+    display: inline;
+    margin: 0;
 }
 
-    </style> 
-    
+</style>     
 </head>
-  <body class="theme-base-0d">
+  <body class="theme-base-0d" onload="onLoad()">
 
     <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
@@ -364,29 +357,52 @@ padding-bottom: 1rem;
  -->
 
 
-  <div data-ex-role="exhibit-collection" id="bots" data-ex-item-types="bot"></div>
-<div data-ex-role="exhibit-collection" id="botally" data-ex-item-types="botally"></div>
-<div data-ex-role="exhibit-collection" id="botmedia" data-ex-item-types="botmedia"></div>
-<div data-ex-role="exhibit-collection" id="botmaterials" data-ex-item-types="botmaterials"></div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  	<div data-ex-role="exhibit-collection" id="botally" data-ex-item-types="botally"></div>
+  
+
+  
+  	<div data-ex-role="exhibit-collection" id="botmaterials" data-ex-item-types="botmaterials"></div>
+  
+
+  
+  	<div data-ex-role="exhibit-collection" id="botmedia" data-ex-item-types="botmedia"></div>
+  
+
+  
+  	<div data-ex-role="exhibit-collection" id="bots" data-ex-item-types="bots"></div>
+  
+
+  
+
+  
 
 <div id="top-panels">
-
-<!-- 
 	<table width="100%">
 		<tr>
 			<td> 
-			<div data-ex-role="facet" data-ex-facet-class="NumericRange" data-ex-expression=".followers_count" data-ex-paginate="true" data-ex-interval="250" data-ex-facet-label="Number of Followers">
+			<div data-ex-role="facet" data-ex-facet-class="NumericRange" data-ex-collection-i-d="botmaterials" data-ex-expression=".followers_count" data-ex-paginate="true" data-ex-interval="250" data-ex-facet-label="Number of Followers">
 			</div>
 			</td>
 			<td> 
-			<div data-ex-role="facet" data-ex-facet-class="NumericRange" data-ex-expression=".statuses_count" data-ex-interval="1000" data-ex-facet-label="Number of Tweets">
+			<div data-ex-role="facet" data-ex-facet-class="NumericRange" data-ex-collection-i-d="botmaterials" data-ex-expression=".statuses_count" data-ex-interval="1000" data-ex-facet-label="Number of Tweets">
 			</div>
 			</td>
 		</tr>
 	</table>
- -->
+
 	<div>Filter results using the search box below:</div>
-	<div class="searchbox" data-ex-role="facet" data-ex-collection-i-d="botmaterials" data-ex-facet-class="TextSearch" data-ex-style="font-size: 1rem;">
+	<div class="searchbox" id="search-default" data-ex-query-param-name="s" data-ex-role="facet" data-ex-collection-i-d="botmaterials" data-ex-facet-class="TextSearch" data-ex-style="font-size: 1rem;">
 	</div>
 </div>
 
@@ -404,6 +420,7 @@ padding-bottom: 1rem;
 		</div>
 		<div data-ex-if-exists=".description" class="description" style="clear: left;">
 			<blockquote data-ex-content=".description"></blockquote>
+			<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Twitterbot bulletin board <a href="https://twitter.com/hashtag/botALLY?src=hash">#botALLY</a> <a href="https://twitter.com/hashtag/edtech?src=hash">#edtech</a> <a href="https://twitter.com/hashtag/kidscancode?src=hash">#kidscancode</a> <a href="http://t.co/tc9Hhr0683">http://t.co/tc9Hhr0683</a> <a href="http://t.co/ydru7UnRf2">pic.twitter.com/ydru7UnRf2</a></p>&mdash; Justin Riley (@20hz20khz) <a href="https://twitter.com/20hz20khz/status/648201676986404865">September 27, 2015</a></blockquote></p>
 		</div>
 <!--		<div data-ex-if-exists=".recentTweet" class="recentTweet">
 			<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Nearly One-third of Consumers Would Give Up Their Car Before Their Smartphone <a href="https://t.co/BVU0Kaalh3">https://t.co/BVU0Kaalh3</a></p>&mdash; Slashdot (@slashdot) <a href="https://twitter.com/slashdot/status/656716147438411776">October 21, 2015</a></blockquote>
