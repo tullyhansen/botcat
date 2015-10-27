@@ -30,17 +30,19 @@
   <!-- Tully's messy crap -->
 <!-- Adapted from http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/ -->
 
-<!-- 	<script src="/js/exhibit-3.1.0/exhibit-api.js" type="text/javascript"></script> -->
-
-<!-- not using timeline (yet) so commenting out
-	<script src="/js/time-extension.js" type="text/javascript"></script> -->
-	      
 <!-- 	      From https://dev.twitter.com/web/javascript/loading -->
 	      
+
+<!-- 
 	      <script>function tweet(message) {
     window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(message), 'Tweet');}</script>
+ -->
+ 
+ 
+<script src="{{ site.baseurl }}/js/twitter-embed.js" type="text/javascript" defer></script>
 	      
-	      <script>window.twttr = (function(d, s, id) {
+<!-- 
+<script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
     t = window.twttr || {};
   if (d.getElementById(id)) return t;
@@ -56,6 +58,8 @@
  
   return t;
 }(document, "script", "twitter-wjs"));</script>
+ -->
+
 	      
 <!-- 
 	      From http://stackoverflow.com/questions/16973726/allow-users-to-embed-tweets-using-only-url
@@ -80,28 +84,12 @@ $('#tweetLink').on('input', function() {
 })
 </script> -->
 
-
-
-<!-- 
-{% if node.layout == 'exhibit'  %}
-	<link rel="exhibit-data" type="application/json" href="{{ site.baseurl }}/js/schema.js" />
-	{% if page.exhibit_test_data %}
-		{% for item in page.exhibit_test_data %}
-				{% assign first_character = item | truncate: 1, '' == '/' %}
-				<link rel="exhibit-data" type="application/json{% if first_character != '/' %}p{% endif %}" href="{% if first_character == '/' %}{{ site.baseurl }}{% endif %}{{ item }}"{% if item contains 'google.com' %} data-ex-converter="googleSpreadsheets"{% endif %} />
-		{% endfor %}
-	{% else %}
-		{% for item in site.test_data %}
-			{% assign first_character = item | truncate: 1, '' == '/' %}
-			<link rel="exhibit-data" type="application/json{% if first_character != '/' %}p{% endif %}" href="{% if first_character == '/' %}{{ site.baseurl }}{% endif %}{{ item }}"{% if item contains 'google.com' %} data-ex-converter="googleSpreadsheets"{% endif %} />
-		{% endfor %}
-	{% endif %}
-{% endif %}
- -->
-
 {% if page.exhibit_data %}
-	<script src="//api.simile-widgets.org/exhibit/HEAD/exhibit-api.js" type="text/javascript"></script>
-<!-- 	<script src="//api.simile-widgets.org/exhibit/HEAD/extensions/time/time-extension.js" type="text/javascript"></script> -->
+
+
+
+
+	<script src="//api.simile-widgets.org/exhibit/HEAD/exhibit-api.js?autoCreate=true" type="text/javascript"></script>
 	<link rel="exhibit-data" type="application/json" href="{{ site.baseurl }}/js/schema.js" />
 	{% if page.exhibit_data contains 'test' %}
 		{% for item in site.exhibit_data_test %}
@@ -114,7 +102,39 @@ $('#tweetLink').on('input', function() {
 			<link rel="exhibit-data" type="application/json{% if first_character != '/' %}p{% endif %}" href="{% if first_character == '/' %}{{ site.baseurl }}{% endif %}{{ item }}"{% if item contains 'google.com' %} data-ex-converter="googleSpreadsheets"{% endif %} />
 		{% endfor %}
 	{% endif %}
+	
+	
+	<script>
+		onLoad = function () {
+			console.log("onLoad got called correctly!");
+			var s, f, fDone;
+			fDone = function() {
+				window.exhibit = Exhibit.create();
+				window.exhibit.configureFromDOM();
+			};
+			console.log("Made it to try block!");
+			try {
+				s = Exhibit.getAttribute(document.body, "ondataload");
+				if (s !== null && typeof s === "string" && s.length > 0) {
+					f = eval(s);
+					if (typeof f === "function") {
+						fDone = f;
+					}
+				}
+			} catch (e) {
+				Exhibit.Debug.warn(Exhibit._("%general.error.dataloadExecution"));
+				Exhibit.Debug.warn(e);
+			};
+			console.log("Made it through try block!");
+			Exhibit.jQuery(document.body).one("dataload.exhibit", fDone);
+			window.database = Exhibit.Database.create();
+			window.database.loadLinks();
+			console.log("Made it to the end of onLoad!");
+		};
+	</script>
 {% endif %}
+
+
 	
 <style>
 
@@ -128,14 +148,6 @@ $('#tweetLink').on('input', function() {
     position: relative;
     top: 0;
     right: 0;
-}
-
-.exhibit-facet-header-filterControl {
-    width: 0;
-}
-
-.exhibit-facet-header {
-    height: 3.5rem;
 }
 
 ol {

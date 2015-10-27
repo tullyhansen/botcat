@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   {% include head.html %}
-  <body class="{{ site.theme }}">
+  <body class="{{ site.theme }}"{% if page.exhibit_data %} onload="onLoad()"{% endif %}>
 
     {% include sidebar.html %}
 
