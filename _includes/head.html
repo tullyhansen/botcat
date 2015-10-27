@@ -30,9 +30,6 @@
   <!-- Tully's messy crap -->
 <!-- Adapted from http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/ -->
 
-<!-- Exhibit 3.0 from http://api.simile-widgets.org/exhibit/STABLE/exhibit-api.js & http://api.simile-widgets.org/exhibit/STABLE/extensions/time/time-extension.js -->
-
-	<script src="//api.simile-widgets.org/exhibit/HEAD/exhibit-api.js" type="text/javascript"></script>
 <!-- 	<script src="/js/exhibit-3.1.0/exhibit-api.js" type="text/javascript"></script> -->
 
 <!-- not using timeline (yet) so commenting out
@@ -84,16 +81,39 @@ $('#tweetLink').on('input', function() {
 </script> -->
 
 
-{% if page.exhibit_data_URLs_test %}
-	{% for item in page.exhibit_data_URLs_test %}
-		{% assign first_character = item | truncate: 1, '' == '/' %}
-		<link rel="exhibit-data" type="application/json{% if first_character != '/' %}p{% endif %}" href="{% if first_character == '/' %}{{ site.baseurl }}{% endif %}{{ item }}"{% if item contains 'google.com' %} data-ex-converter="googleSpreadsheets"{% endif %} />
-	{% endfor %}
-{% else %}
-	{% for item in page.exhibit_data_URLs %}
-		{% assign first_character = item | truncate: 1, '' == '/' %}
-		<link rel="exhibit-data" type="application/json{% if first_character != '/' %}p{% endif %}" href="{% if first_character == '/' %}{{ site.baseurl }}{% endif %}{{ item }}"{% if item contains 'google.com' %} data-ex-converter="googleSpreadsheets"{% endif %} />
-	{% endfor %}
+
+<!-- 
+{% if node.layout == 'exhibit'  %}
+	<link rel="exhibit-data" type="application/json" href="{{ site.baseurl }}/js/schema.js" />
+	{% if page.exhibit_test_data %}
+		{% for item in page.exhibit_test_data %}
+				{% assign first_character = item | truncate: 1, '' == '/' %}
+				<link rel="exhibit-data" type="application/json{% if first_character != '/' %}p{% endif %}" href="{% if first_character == '/' %}{{ site.baseurl }}{% endif %}{{ item }}"{% if item contains 'google.com' %} data-ex-converter="googleSpreadsheets"{% endif %} />
+		{% endfor %}
+	{% else %}
+		{% for item in site.test_data %}
+			{% assign first_character = item | truncate: 1, '' == '/' %}
+			<link rel="exhibit-data" type="application/json{% if first_character != '/' %}p{% endif %}" href="{% if first_character == '/' %}{{ site.baseurl }}{% endif %}{{ item }}"{% if item contains 'google.com' %} data-ex-converter="googleSpreadsheets"{% endif %} />
+		{% endfor %}
+	{% endif %}
+{% endif %}
+ -->
+
+{% if page.exhibit_data %}
+	<script src="//api.simile-widgets.org/exhibit/HEAD/exhibit-api.js" type="text/javascript"></script>
+<!-- 	<script src="//api.simile-widgets.org/exhibit/HEAD/extensions/time/time-extension.js" type="text/javascript"></script> -->
+	<link rel="exhibit-data" type="application/json" href="{{ site.baseurl }}/js/schema.js" />
+	{% if page.exhibit_data contains 'test' %}
+		{% for item in site.exhibit_data_test %}
+				{% assign first_character = item | truncate: 1, '' == '/' %}
+				<link rel="exhibit-data" type="application/json{% if first_character != '/' %}p{% endif %}" href="{% if first_character == '/' %}{{ site.baseurl }}{% endif %}{{ item }}"{% if item contains 'google.com' %} data-ex-converter="googleSpreadsheets"{% endif %} />
+		{% endfor %}
+	{% elsif page.exhibit_data contains 'prod' %}
+		{% for item in site..exhibit_data_prod %}
+			{% assign first_character = item | truncate: 1, '' == '/' %}
+			<link rel="exhibit-data" type="application/json{% if first_character != '/' %}p{% endif %}" href="{% if first_character == '/' %}{{ site.baseurl }}{% endif %}{{ item }}"{% if item contains 'google.com' %} data-ex-converter="googleSpreadsheets"{% endif %} />
+		{% endfor %}
+	{% endif %}
 {% endif %}
 	
 	<style>

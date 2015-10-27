@@ -1,13 +1,9 @@
 ---
-layout: page
-title: bots
-weight: 1
-exhibit_data_URLs:
-  - https://spreadsheets.google.com/feeds/list/1vleb6Y37ctkjlWbCiTemABgpit83eqW1FT8HEwc0l9I/1/public/values?alt=json-in-script
-  - https://spreadsheets.google.com/feeds/list/1vleb6Y37ctkjlWbCiTemABgpit83eqW1FT8HEwc0l9I/2/public/values?alt=json-in-script
-  - /js/schema.js
+title:	bots
+exhibit_data: test # 'test' or 'prod' - loads data from sources specified in _config.yml
+weight:	1
 ---
-  {% include exhibit-bot.html %}
+
 <!-- 
 <div class="posts">
   {% for post in paginator.posts %}
