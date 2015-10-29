@@ -1,0 +1,382 @@
+<html>
+<head>
+   <title>MIT Nobel Prize Winners</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+<script src="./js/twitter-embed.js"></script> 
+
+<!-- ^^ is this right? TODO -->
+
+<link rel="exhibit-extension" href="http://api.simile-widgets.org/exhibit/HEAD/extensions/map/map-extension.js"/>
+<link rel="exhibit-extension" href="http://api.simile-widgets.org/exhibit/HEAD/extensions/time/time-extension.js"/>
+
+
+
+
+<script type="text/javascript">
+
+// Loads Exhibit API after document is ready.
+// @author @lmorillas
+// https://git.wikimedia.org/blob/mediawiki%2Fextensions%2FCargo/5d58912d6969cadece74c89b7ac66450f692e6f3/libs%2Fext.cargo.exhibit.js
+ 
+/*jshint globals Exhibit */
+
+/* vv from http://stackoverflow.com/a/8486188 */
+
+// var getUrlParameter = function getJsonFromUrl(hashBased) {
+//   var query;
+//   if(hashBased) {
+//     var pos = location.href.indexOf("?");
+//     if(pos==-1) return [];
+//     query = location.href.substr(pos+1);
+//   } else {
+//     query = location.search.substr(1);
+//   }
+//   var result = {};
+//   query.split("&").forEach(function(part) {
+//     if(!part) return;
+//     part = part.replace("+"," ");
+//     var eq = part.indexOf("=");
+//     var key = eq>-1 ? part.substr(0,eq) : part;
+//     var val = eq>-1 ? decodeURIComponent(part.substr(eq+1)) : "";
+//     var from = key.indexOf("[");
+//     if(from==-1) result[decodeURIComponent(key)] = val;
+//     else {
+//       var to = key.indexOf("]");
+//       var index = decodeURIComponent(key.substring(from+1,to));
+//       key = decodeURIComponent(key.substring(0,from));
+//       if(!result[key]) result[key] = [];
+//       if(!index) result[key].push(val);
+//       else result[key][index] = val;
+//     }
+//   });
+//   return result;
+// }
+
+/*  vv from http://stackoverflow.com/a/21903119 */
+
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+        
+        console.log(sParameterName[0]);
+        console.log(sParameterName[1]);
+    };
+};
+ 
+var Exhibit_urlPrefix = "//api.simile-widgets.org/exhibit/HEAD/";
+var Exhibit_TimeExtension_urlPrefix = Exhibit_urlPrefix + "extensions/time/";
+var Exhibit_MapExtension_urlPrefix = Exhibit_urlPrefix + "extensions/map/";
+var ex_url = "//api.simile-widgets.org/exhibit/HEAD/exhibit-api.js";
+ 
+window.Exhibit_parameters="?autoCreate=false";
+ 
+window.tableStyler = function(table, database) {
+    $(table).addClass("cargoTable");
+};
+
+// ^^ this can probably go TODO
+ 
+jQuery("#loading_exhibit").show();
+jQuery("#loaded_exhibit").hide();
+// set style="display: none" on starting-hidden elements
+ 
+jQuery.ajax({
+    url: ex_url,
+    dataType: "script",
+    cache: true
+});
+ 
+jQuery(document).on("staticComponentsRegistered.exhibit", function(evt) {
+    Exhibit.autoCreate();
+//     document.getElementById("facetdiscipline").setAttribute("data-ex-selection", getUrlParameter("discipline"));
+//     document.getElementById("facetrelationship").setAttribute("data-ex-selection", getUrlParameter("facetrelationship"));
+// 
+// 
+//           var fDone = function() {
+//              var params = SimileAjax.parseURLParameters();
+//              var options = ["discipline", "relationship", "shared", "deceased"];
+//               for ( var i in options ) {
+//                 var option = options[i];
+//                 if (option in params) {
+//                   if (params[option]) {
+//                     document.getElementById(option +
+//                       "-facet").setAttribute("data-ex-selection", params[option]);
+//                    }
+//                    else {
+//                     document.getElementById(option +
+//                       "-facet").setAttribute("data-ex-selectMissing", "true");
+//                    }
+//                 }
+//               }
+// 
+//               window.exhibit = Exhibit.create();
+//               window.exhibit.configureFromDOM();
+//           };
+// 
+//           window.database = Exhibit.Database.create();
+//           window.database.loadDataLinks(fDone);
+
+});
+ 
+jQuery(document).on("scriptsLoaded.exhibit", function(evt) {
+    jQuery("#loading_exhibit").hide();
+	jQuery("#loaded_exhibit").show();
+	
+	
+	
+// 	jQuery.ajax({
+//     url: "./js/twitter-embed.js",
+//     dataType: "script",
+//     cache: false
+// 	});
+// 	var tweety = document.createElement("script");
+// 	tweety.src = "./js/twitter-embed.js";
+// 	document.body.appendChild(tweety);
+});
+ 
+ 
+ 
+// jQuery(document).on("exhibitConfigured.exhibit", function(evt) {
+// 	var tweety = document.createElement("script");
+// 	tweety.src = "./js/twitter-embed.js";
+// 	document.body.appendChild(tweety);
+// });
+
+
+// https://groups.google.com/d/msg/simile-widgets/Knlbxyi2UVY/9Fm54Tm3WTEJ
+
+jQuery(document).on("exhibitConfigured.exhibit itemshow.exhibit onResetAllFilters.exhibit exhibitConfigured.exhibit onFacetUpdated.exhibit importReady.exhibit onBeforeFacetReset.exhibit registerFacets.exhibit registerComponents.exhibit onItemsChanged.exhibit dataload.exhibit onAfterViewPanelSwitch.exhibit", function(evt) {
+	twttr.widgets.load();
+	
+	
+	
+// 	cf. https://dev.twitter.com/web/javascript/initialization for more specificity
+});
+</script>
+
+<!-- 
+<script type="text/javascript">
+      jQuery(document).ready(function() {
+          var fDone = function() {
+             var params = SimileAjax.parseURLParameters();
+             var options = ["discipline", "relationship", "shared", "deceased"];
+              for ( var i in options ) {
+                var option = options[i];
+                if (option in params) {
+                  if (params[option]) {
+                    document.getElementById(option +
+                      "-facet").setAttribute("data-ex-selection", params[option]);
+                   }
+                   else {
+                    document.getElementById(option +
+                      "-facet").setAttribute("data-ex-selectMissing", "true");
+                   }
+                }
+              }
+
+              window.exhibit = Exhibit.create();
+              window.exhibit.configureFromDOM();
+          };
+
+          window.database = Exhibit.Database.create();
+          window.database.loadDataLinks(fDone);
+      });
+</script>
+ -->
+
+<!-- 
+<script type="text/javascript">
+       var oldApplyRestrictions = Exhibit.ListFacet.prototype.applyRestrictions; 
+       Exhibit.ListFacet.prototype.applyRestrictions = function(restrictions) { 
+          oldApplyRestrictions.call(this, restrictions); 
+          var facetID = this._div.id; 
+          // change the # part of the current URL, given facetID and restrictions 
+       } 
+</script>
+ -->
+
+   <link href="js/nobelists3ed.js" type="application/json" rel="exhibit/data" cache="true" />
+
+<!-- <script src="//api.simile-widgets.org/exhibit/HEAD/exhibit-api.js" type="text/javascript"></script> -->
+<!-- <script src="//api.simile-widgets.org/exhibit/HEAD/extensions/time/time-extension.js" type="text/javascript"></script> -->
+
+
+<!-- 
+<script type="text/javascript">
+
+	var Exhibit_urlPrefix = "//api.simile-widgets.org/exhibit/HEAD/";
+	var Exhibit_TimeExtension_urlPrefix = Exhibit_urlPrefix + "extensions/time/";
+	var Exhibit_MapExtension_urlPrefix = Exhibit_urlPrefix + "extensions/map/";
+	var ex_url = "//api.simile-widgets.org/exhibit/HEAD/exhibit-api.js";
+ 
+	window.Exhibit_parameters="?autoCreate=false";
+ 
+	// window.tableStyler = function(table, database) {
+	//     $(table).addClass("cargoTable");
+	// };
+ 
+// 	$("#loading_exhibit").show();
+ 
+	jQuery.ajax({
+		url: ex_url,
+		dataType: "script",
+		cache: true
+	});
+ 
+	// $(document).on("scriptsLoaded.exhibit", function(evt) {
+	//     $("#loading_exhibit").hide();
+	// });
+ 
+	$(document).on("staticComponentsRegistered.exhibit", function(evt) {
+		Exhibit.autoCreate();
+	});
+
+	// $(document).ready(function() {
+	// 	console.log("ready, yo");
+	// });
+
+	$(document).on("scriptsLoaded.exhibit", function(evt) {
+		jQuery.ajax({
+			  url: "js/twitter-embed.js",
+			  dataType: "script",
+			  cache: true
+		}).done(function() {
+				console.log("We jQueried, friend.");
+		});
+	});
+</script>
+ -->
+
+
+<!-- 
+	<script type="text/javascript">
+		onLoad = function() {
+			console.log("onLoad got called correctly!");
+			var s, f, fDone;
+			fDone = function() {
+				window.exhibit = Exhibit.create();
+				window.exhibit.configureFromDOM();
+			};
+			console.log("Made it to try block!");
+			try {
+				s = Exhibit.getAttribute(document.body, "ondataload");
+				if (s !== null && typeof s === "string" && s.length > 0) {
+					f = eval(s);
+					if (typeof f === "function") {
+						fDone = f;
+					}
+				}
+			} catch (e) {
+				Exhibit.Debug.warn(Exhibit._("%general.error.dataloadExecution"));
+				Exhibit.Debug.warn(e);
+			};
+			console.log("Made it through try block!");
+			Exhibit.jQuery(document.body).one("dataload.exhibit", fDone);
+			window.database = Exhibit.Database.create();
+			window.database.loadLinks();
+			console.log("Made it to the end of onLoad!");
+		};
+	</script>
+ -->
+           
+   <style>
+       body {
+           margin: 1in;
+       }
+       table.nobelist {
+           border:     1px solid #ddd;
+           padding:    0.5em;
+       }
+       div.name {
+           font-weight: bold;
+           font-size:   120%;
+       }
+       .discipline {
+       }
+       .year {
+           font-style:  italic;
+       }
+       .relationship {
+           color:  #888;
+       }
+       .co-winners {
+       }
+   </style>
+</head> 
+<!-- <body onload="onLoad()"> -->
+<body>
+   <h1 id="loaded_exhibit" style="display: none;">MIT Nobel Prize Winners</h1>
+   <h2 id="loading_exhibit">L-O-A-D-I-N-G</h2>
+   <table width="100%">
+       <tr valign="top">
+           <td data-ex-role="viewPanel" id="viewpanelid">
+               <table data-ex-role="lens"  id="nobelistdefaultlensid" class="nobelist">
+                   <tr>
+                       <td><img data-ex-src-content=".imageURL" /></td>
+                       <td>
+                           <div data-ex-content=".label" class="name"></div>
+                           <div>
+                               <span data-ex-content=".discipline" class="discipline"></span>, 
+                               <span data-ex-content=".nobel-year" class="year"></span>
+                           </div>
+                           <div data-ex-if-exists=".co-winner" class="co-winners">Co-winners: 
+                               <span data-ex-content=".co-winner"></span>
+                           </div>
+                           <div data-ex-content=".relationship-detail" class="relationship"></div>
+                       </td>
+                   </tr>
+               </table>
+               <div data-ex-role="view"
+                id="viewtabularid"
+                   data-ex-view-class="Tabular"
+                   data-ex-columns=".label, .imageURL, .discipline, .nobel-year, .relationship-detail"
+                   data-ex-column-labels="name, photo, discipline, year, relationship with MIT"
+                   data-ex-sort-column="3"
+                   data-ex-sort-ascending="false">
+<!--                    <table> template layout after https://groups.google.com/d/msg/simile-widgets/IR0ld6Lwq_U/X0gJZEnMOAQJ -->
+                   <table style="display: none;"> 
+						<tr data-ex-background-style-content="if(exists(.death), '#ccc', 'white')"> 
+							<td><span data-ex-content=".label"></span></td> 
+							<td><img data-ex-src-content=".imageURL" /></td> 
+							<td><span data-ex-content=".discipline"></span></td> 
+							<td><span data-ex-content=".nobel-year"></span></td> 
+							<td><span data-ex-content=".relationship-detail"></span></td> 
+						</tr> 
+					</table>
+               </div>
+
+              <div data-ex-role="view"
+                id="viewtimelineid"
+                   data-ex-view-class="Timeline"
+                   data-ex-start=".nobel-year"
+                   data-ex-colorKey=".discipline">
+               </div>
+
+               <div data-ex-role="view"
+                id="viewtileid"
+                   data-ex-view-class="Tile"
+                   data-ex-paginate="false"
+                   data-ex-orders=".discipline, .nobel-year"
+                   data-ex-possible-orders=".label, .last-name, .discipline, .relationship, .shared, .deceased, .nobel-year">
+               </div>
+            </td>
+           <td width="25%">
+               <div data-ex-role="facet" id="TextSearch-facet" data-ex-facet-class="TextSearch"></div>
+               <div data-ex-role="facet" id="discipline-facet" data-ex-expression=".discipline" data-ex-facet-label="Discipline"></div>
+               <div data-ex-role="facet" id="relationship-facet" data-ex-expression=".relationship" data-ex-facet-label="Relationship"></div>
+               <div data-ex-role="facet" id="shared-facet" data-ex-expression=".shared" data-ex-facet-label="Shared?"></div>
+               <div data-ex-role="facet" id="deceased-facet" data-ex-expression=".deceased" data-ex-facet-label="Deceased?"></div>
+           </td>
+       </tr>
+   </table>
+</body>
+</html>
