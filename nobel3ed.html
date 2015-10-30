@@ -146,79 +146,90 @@ jQuery(document).on("staticComponentsRegistered.exhibit", function(evt) {
 	console.log("staticComponentsRegistered");
 	
 	Exhibit.autoCreate();
-});
-
-
- 
-jQuery(document).on("dataload.exhibit", function(evt) {
-	console.log("dataload");
 	twttr.widgets.load();
 });
+
+
+
 
 jQuery(document).on("onItemsChanged.exhibit", function(evt) {
-	twttr.widgets.load();
+ 	setTimeout(function(){twttr.widgets.load()}, 0); // works!
 	console.log("onItemsChanged");
 });
 
-jQuery(document).on("onRootItemsChanged.exhibit", function(evt) {
-	twttr.widgets.load();
-	console.log("onRootItemsChanged");
-});
-
-jQuery(document).on("onFacetUpdated.exhibit", function(evt) {
-	console.log("onFacetUpdated");
-});
-
-jQuery(document).on("facetUpdated.exhibit", function(evt) {
-	console.log("facetUpdated");
-});
-
-jQuery(document).on("onItemShow.exhibit", function(evt) {
-	console.log("onItemShow");
-	twttr.widgets.load(); // doesn't work?
-});
-
-jQuery(document).on("onResetAllFilters.exhibit", function(evt) {
-	twttr.widgets.load();
-	console.log("onResetAllFilters");
-});
-
-jQuery(document).on("onBeforeFacetReset.exhibit", function(evt) {
-	console.log("onBeforeFacetReset");
-});
-
-jQuery(document).on("onAfterFacetReset.exhibit", function(evt) {
-	console.log("onAfterFacetReset");
-});
-
-jQuery(document).on("onFacetReset.exhibit", function(evt) {
-	console.log("onFacetReset");
-});
-
-jQuery(document).on("registerFacets.exhibit", function(evt) {
-	console.log("registerFacets");
-});
 
 jQuery(document).on("onAfterViewPanelSwitch.exhibit", function(evt) {
+ 	setTimeout(function(){twttr.widgets.load()}, 0); // works!
 	console.log("onAfterViewPanelSwitch");
-	twttr.widgets.load(); // works
 });
 
-jQuery(document).on("resetAllFilters.exhibit", function(evt) {
-	console.log("resetAllFilters");
-});
-
-jQuery(document).on("importReady.exhibit", function(evt) {
-	console.log("importReady");
-});
-
-jQuery(document).on("constructFromLensTemplate.exhibit", function(evt) {
-	console.log("constructFromLensTemplate");
-});
-
-jQuery(document).on("onAfterLoadingTypes.exhibit onAfterLoadingProperties.exhibit onAfterRemovingAllStatements.exhibit onAfterLoadingItems.exhibit", function(evt) {
-	console.log("doesathingnice");
-});
+// 
+// 
+// jQuery(document).on("dataload.exhibit", function(evt) {
+// 	console.log("dataload");
+// 	twttr.widgets.load();
+// });
+// 
+// jQuery(document).on("onItemShow.exhibit", function(evt) {
+// 	console.log("onItemShow");
+// 	twttr.widgets.load(); // doesn't work?
+// });
+// 
+// jQuery(document).on("onRootItemsChanged.exhibit", function(evt) {
+// 	twttr.widgets.load();
+// 	console.log("onRootItemsChanged");
+// });
+// 
+// jQuery(document).on("onFacetUpdated.exhibit", function(evt) {
+// 	console.log("onFacetUpdated");
+// });
+// 
+// jQuery(document).on("facetUpdated.exhibit", function(evt) {
+// 	console.log("facetUpdated");
+// });
+// 
+// jQuery(document).on("onItemShow.exhibit", function(evt) {
+// 	console.log("onItemShow");
+// 	twttr.widgets.load(); // doesn't work?
+// });
+// 
+// jQuery(document).on("onResetAllFilters.exhibit", function(evt) {
+// 	twttr.widgets.load();
+// 	console.log("onResetAllFilters");
+// });
+// 
+// jQuery(document).on("onBeforeFacetReset.exhibit", function(evt) {
+// 	console.log("onBeforeFacetReset");
+// });
+// 
+// jQuery(document).on("onAfterFacetReset.exhibit", function(evt) {
+// 	console.log("onAfterFacetReset");
+// });
+// 
+// jQuery(document).on("onFacetReset.exhibit", function(evt) {
+// 	console.log("onFacetReset");
+// });
+// 
+// jQuery(document).on("registerFacets.exhibit", function(evt) {
+// 	console.log("registerFacets");
+// });
+// 
+// 
+// jQuery(document).on("resetAllFilters.exhibit", function(evt) {
+// 	console.log("resetAllFilters");
+// });
+// 
+// jQuery(document).on("importReady.exhibit", function(evt) {
+// 	console.log("importReady");
+// });
+// 
+// jQuery(document).on("constructFromLensTemplate.exhibit", function(evt) {
+// 	console.log("constructFromLensTemplate");
+// });
+// 
+// jQuery(document).on("onAfterLoadingTypes.exhibit onAfterLoadingProperties.exhibit onAfterRemovingAllStatements.exhibit onAfterLoadingItems.exhibit", function(evt) {
+// 	console.log("doesathingnice");
+// });
 
 </script>
 
