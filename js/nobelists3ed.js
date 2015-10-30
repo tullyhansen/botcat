@@ -450,7 +450,7 @@
             "last-name" :           "Fire",
             "nobel-year" :          "2006",
             "relationship" :          "alumni",
-            "relationship-detail" : "MIT Ph.D. 1983",
+            "relationship-detail" : "<blockquote class='twitter-tweet' lang='en'><p lang='en' dir='ltr'>One bone with two meanings is the traitor&#39;s shield and shaft.&#10;—proverb</p>&mdash; Every Bone (@every_bone) <a href='https://twitter.com/every_bone/status/659903299831730176'>October 30, 2015</a></blockquote>",
             "imageURL" :              "http://nobelprize.org/nobel_prizes/medicine/laureates/2006/fire_thumb.jpg"
         },
         {   "type" :                  "Nobelist",

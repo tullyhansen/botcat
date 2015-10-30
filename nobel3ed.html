@@ -3,6 +3,23 @@
    <title>MIT Nobel Prize Winners</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
 
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
 <link rel="exhibit-extension" href="http://api.simile-widgets.org/exhibit/HEAD/extensions/map/map-extension.js"/>
 <link rel="exhibit-extension" href="http://api.simile-widgets.org/exhibit/HEAD/extensions/time/time-extension.js"/>
 
@@ -90,11 +107,11 @@ jQuery.ajax({
 jQuery(document).on("scriptsLoaded.exhibit", function(evt) {
     jQuery("#loading_exhibit").hide();
 	jQuery("#loaded_exhibit").show();
-	jQuery.ajax({
-    url: "js/twitter-embed.js",
-    dataType: "script",
-    cache: false
-	});
+// 	jQuery.ajax({
+//     url: "js/twitter-embed.js",
+//     dataType: "script",
+//     cache: false
+// 	});
 	if (qd.hasOwnProperty("") != true) {
 		var options = ["discipline", "relationship", "shared", "deceased"];
 		for ( var i in options ) {
@@ -124,12 +141,13 @@ jQuery(document).on("scriptsLoaded.exhibit", function(evt) {
 });
  
 jQuery(document).on("staticComponentsRegistered.exhibit", function(evt) {
-	Exhibit.autoCreate();	
+	Exhibit.autoCreate();
 });
  
-// jQuery(document).on("dataload.exhibit", function(evt) {
-// 
-// }
+jQuery(document).on("dataload.exhibit", function(evt) {
+	twttr.widgets.load();	
+
+});
 
 </script>
 
