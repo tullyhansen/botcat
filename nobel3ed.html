@@ -5,6 +5,9 @@
 
 <link rel="exhibit-extension" href="http://api.simile-widgets.org/exhibit/HEAD/extensions/map/map-extension.js"/>
 <link rel="exhibit-extension" href="http://api.simile-widgets.org/exhibit/HEAD/extensions/time/time-extension.js"/>
+
+   <link href="js/nobelists3ed.js" type="application/json" rel="exhibit/data" cache="true" />
+
 <script type="text/javascript">
 
 // Loads Exhibit API after document is ready.
@@ -13,24 +16,55 @@
  
 /*jshint globals Exhibit */
 
-/* http://stackoverflow.com/a/21903119 */
-var getUrlParameter = function getUrlParameter(sParam) {
-    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
+// http://stackoverflow.com/a/21903119// 
+// 
+// var getUrlParameter = function getUrlParameter(sParam) {
+//     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+//         sURLVariables = sPageURL.split('&'),
+//         sParameterName,
+//         i;
+// 
+//     for (i = 0; i < sURLVariables.length; i++) {
+//         sParameterName = sURLVariables[i].split('=');
+// 
+//         if (sParameterName[0] === sParam) {
+//             return sParameterName[1] === undefined ? true : sParameterName[1];
+//         }
+//         
+//         console.log(sParameterName[1]);
+//     };
+// };
 
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
+//
 
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : sParameterName[1];
-        }
-        
-        console.log(sParameterName[1]);
-    };
-};
- 
+// http://stackoverflow.com/a/21152762
+
+var qd = {};
+location.search.substr(1).split("&").forEach(function(item) {
+    var s = item.split("="),
+        k = s[0],
+        v = s[1] && decodeURIComponent(s[1]);
+    (k in qd) ? qd[k].push(v) : qd[k] = [v]
+});
+// for query string ?foo=graham, qd.foo[0] will return string "graham"
+
+
+var urlParams;
+(window.onpopstate = function () {
+    var match,
+        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+        query  = window.location.search.substring(1);
+
+    urlParams = {};
+    while (match = search.exec(query))
+       urlParams[decode(match[1])] = decode(match[2]);
+})();
+
+
+//
+
 var Exhibit_urlPrefix = "//api.simile-widgets.org/exhibit/HEAD/";
 var Exhibit_TimeExtension_urlPrefix = Exhibit_urlPrefix + "extensions/time/";
 var Exhibit_MapExtension_urlPrefix = Exhibit_urlPrefix + "extensions/map/";
@@ -38,9 +72,10 @@ var ex_url = "//api.simile-widgets.org/exhibit/HEAD/exhibit-api.js";
  
 window.Exhibit_parameters="?autoCreate=false";
  
-window.tableStyler = function(table, database) {
-    $(table).addClass("cargoTable");
-};
+// window.tableStyler = function(table, database) {
+//     $(table).addClass("cargoTable");
+// };
+
  
 jQuery("#loading_exhibit").show();
 jQuery("#loaded_exhibit").hide();
@@ -60,16 +95,41 @@ jQuery(document).on("scriptsLoaded.exhibit", function(evt) {
     dataType: "script",
     cache: false
 	});
+	if (qd.hasOwnProperty("") != true) {
+		var options = ["discipline", "relationship", "shared", "deceased"];
+		for ( var i in options ) {
+			// debugger;
+			var option = options[i];
+			if (option in qd) {
+			//	debugger;
+				document.getElementById(option + "-facet").setAttribute("data-ex-selection", qd[option][0]);
+
+// 			  if (qd[option]) {
+				
+// 			   }
+// 			   else {
+// 				document.getElementById(option +
+// 				  "-facet").setAttribute("data-ex-selectMissing", "true");
+// 			   }
+			}
+		}
+	}
+// 		document.getElementById("discipline-facet").setAttribute("data-ex-selection", getUrlParameter("discipline"));
+// 		document.getElementById("relationship-facet").setAttribute("data-ex-selection", getUrlParameter("relationship"));
+
+	
 // 	var tweety = document.createElement("script");
 // 	tweety.src = "js/twitter-embed.js";
 // 	document.body.appendChild(tweety);
 });
  
 jQuery(document).on("staticComponentsRegistered.exhibit", function(evt) {
-    Exhibit.autoCreate();
-    document.getElementById("facetdiscipline").setAttribute("data-ex-selection", getUrlParameter("discipline"));
-    document.getElementById("facetrelationship").setAttribute("data-ex-selection", getUrlParameter("relationship"));
+	Exhibit.autoCreate();	
 });
+ 
+// jQuery(document).on("dataload.exhibit", function(evt) {
+// 
+// }
 
 </script>
 
@@ -78,7 +138,6 @@ jQuery(document).on("staticComponentsRegistered.exhibit", function(evt) {
 
 
 
-   <link href="js/nobelists3ed.js" type="application/json" rel="exhibit/data" cache="true" />
 
 <!-- <script src="//api.simile-widgets.org/exhibit/HEAD/exhibit-api.js" type="text/javascript"></script> -->
 <!-- <script src="//api.simile-widgets.org/exhibit/HEAD/extensions/time/time-extension.js" type="text/javascript"></script> -->
@@ -243,11 +302,11 @@ jQuery(document).on("staticComponentsRegistered.exhibit", function(evt) {
                </div>
             </td>
            <td width="25%">
-               <div data-ex-role="facet" id="facetTextSearch" data-ex-facet-class="TextSearch"></div>
-               <div data-ex-role="facet" id="facetdiscipline" data-ex-expression=".discipline" data-ex-facet-label="Discipline" data-ex-selection="Peace"></div>
-               <div data-ex-role="facet" id="facetrelationship" data-ex-expression=".relationship" data-ex-facet-label="Relationship"></div>
-               <div data-ex-role="facet" id="facetshared" data-ex-expression=".shared" data-ex-facet-label="Shared?"></div>
-               <div data-ex-role="facet" id="facetdeceased" data-ex-expression=".deceased" data-ex-facet-label="Deceased?"></div>
+               <div data-ex-role="facet" id="TextSearch-facet" data-ex-facet-class="TextSearch"></div>
+               <div data-ex-role="facet" id="discipline-facet" data-ex-expression=".discipline" data-ex-facet-label="Discipline"></div>
+               <div data-ex-role="facet" id="relationship-facet" data-ex-expression=".relationship" data-ex-facet-label="Relationship"></div>
+               <div data-ex-role="facet" id="shared-facet" data-ex-expression=".shared" data-ex-facet-label="Shared?"></div>
+               <div data-ex-role="facet" id="deceased-facet" data-ex-expression=".deceased" data-ex-facet-label="Deceased?"></div>
            </td>
        </tr>
    </table>
