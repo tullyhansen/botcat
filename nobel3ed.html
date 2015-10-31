@@ -68,7 +68,7 @@
 			Exhibit.autoCreate();
 		});
  
-		jQuery(document).on("staticComponentsRegistered.exhibit exhibitConfigured.exhibit onItemsChanged.exhibit onAfterViewPanelSwitch.exhibit", function(evt) {
+		jQuery(document).on("onItemShow.exhibit staticComponentsRegistered.exhibit exhibitConfigured.exhibit onItemsChanged.exhibit onAfterViewPanelSwitch.exhibit", function(evt) {
 			setTimeout(function(){twttr.widgets.load()}, 1); // works!
 		});
 	</script>

@@ -27,62 +27,7 @@
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
   
-  <!-- Tully's messy crap -->
-<!-- Adapted from http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/ -->
-
-<!-- 	      From https://dev.twitter.com/web/javascript/loading -->
-	      
-
-<!-- 
-	      <script>function tweet(message) {
-    window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(message), 'Tweet');}</script>
- -->
- 
- 
-<script src="/botDB/js/twitter-embed.js" type="text/javascript" defer></script>
-	      
-<!-- 
-<script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
- 
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
- 
-  return t;
-}(document, "script", "twitter-wjs"));</script>
- -->
-
-	      
-<!-- 
-	      From http://stackoverflow.com/questions/16973726/allow-users-to-embed-tweets-using-only-url
-	      I don't know how to make this work? So Imma comment it out for now.
-
-	      
-	      <script>
-$('#tweetLink').on('input', function() {
-    var url = $('#tweetLink').val();
-                if(url)
-                {
-                    $.ajax({
-                        url: "https://api.twitter.com/1/statuses/oembed.json?url="+url,
-                        dataType: "jsonp",
-                        async: false,
-                        success: function(data){
-                            $("#embedCode").val(data.html);
-                            $("#preview").html(data.html)   
-                        }
-                    });
-                }
-})
-</script> -->
+  <!-- Scripts -->
 
 
 
@@ -148,6 +93,14 @@ ol {
 .exhibit img {
     display: inline;
     margin: 0;
+}
+
+.twitter-tweet {
+    margin: auto;
+}
+
+blockquote {
+	padding-right: 1.25rem;
 }
 
 </style>     
@@ -342,6 +295,7 @@ ol {
 		}
 		(document, "script", "twitter-wjs"));
 	</script>
+
     
   </body>
 </html>
