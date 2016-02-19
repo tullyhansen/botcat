@@ -8,12 +8,12 @@ permalink:           pretty
 
 # Setup
 title:               botcat
-tagline:             a directory of bots, allies, media and materials
+tagline:             a catalogue of bots, allies, media and materials
 
 description: >       # this means to ignore newlines until "url:"
                      a catalogue of bots, allies, media and materials
 url:                 http://bot.cat
-baseurl:             /botDB
+#baseurl:             /botDB
 twitter_username:    botALLY
 
 # Custom
@@ -26,7 +26,7 @@ author:
   email:             tully@tullyhansen.com
   
 github:
-  repo:              https://github.com/tullyhansen/bots
+  repo:              https://github.com/tullyhansen/botcat
 
 # Custom vars
 version:             0.0
