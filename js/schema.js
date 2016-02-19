@@ -4,7 +4,7 @@
             "label": "bot-related thing",
             "pluralLabel": "bot-related things"
         },
-        "bot": {
+        "bots": {
             "label": "bot",
             "pluralLabel": "bots"
         },
