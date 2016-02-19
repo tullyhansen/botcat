@@ -65,8 +65,8 @@ Please get in touch if you have any questions, suggestions, concerns or [clumsy 
 
 [botc.at](.) is meant as a useful reference in its own right, but also one that can freely be incorporated into other projects. Contributors retain copyright on any original contributions but agree to license their work in accordance with the following:
 
-- The [botc.at](.) database and entries stored in Google Docs are licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). A link back to [this page](.) is considered sufficient attribution.
-- The [botc.at](.) website and underlying code are licensed under the MIT License. Some parts of the website and code may fall under licenses assigned by their respective creators, as detailed in the [full license](license/).
+- The [botc.at](.) database and data stored in Google Docs are licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). A link back to [this page](.) is considered sufficient attribution.
+- The [botc.at](.) website and underlying code are licensed under the MIT License. Some parts of the website and code may fall under licenses assigned by their respective creators, as detailed in the [full license](LICENSE/).
 
 ## Acknowledgements
 
