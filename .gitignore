@@ -44,4 +44,3 @@ bower_components
 # Thing that was in this file before I copied contents from https://github.com/poole/lanyon/blob/master/.gitignore
 
 .sass-cache/*
-_site/*
