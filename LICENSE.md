@@ -12,7 +12,7 @@ This project incorporates code from the following, whose licenses are included b
 
 Notwithstanding the above, this project is licensed under The MIT License (MIT).
 
-## botDB license
+## botc.at license
 
 Copyright (c) 2015 Tully Hansen.
 
