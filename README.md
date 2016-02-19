@@ -49,7 +49,7 @@ Please [contact us](#who-to-complain-to) if you have any questions or concerns r
 
 The most helpful thing you can do is to **add entries to the database**! But be sure you've read up on [how to behave](#how-to-behave) first. You're encouraged to submit entries for yourself and your own bots, writing and tools, as well as for the work of others that you admire. This can be done using the Google Form at the top of each section, which publish 'live' to the site. You're also encouraged (though not required) to sign your name (or alias, Twitter handle, etc.) to your submissions.
 
-If you'd like to **make improvements to the site** itself, and you have a GitHub account, you're welcome to [fork](https://guides.github.com/activities/forking/) the [botc.at repo](https://github.com/tullyhansen/botc.at/) – you'll [need Jekyll installed](http://jekyllrb.com/docs/installation/) if you want to run the site locally. Pull requests welcomed.
+If you'd like to **make improvements to the site** itself, and you have a GitHub account, you're welcome to [fork](https://guides.github.com/activities/forking/) the [botc.at repo](https://github.com/tullyhansen/botcat/) – you'll [need Jekyll installed](http://jekyllrb.com/docs/installation/) if you want to run the site locally. Pull requests welcomed.
 
 Finally, please **share [botc.at](.) with friends and fellow [\#botALLY](https://twitter.com/hashtag/botALLY?src=hash)**!
 
