@@ -446,7 +446,7 @@ blockquote {
 
 		</div>
 		<div data-ex-if-exists=".tweet">
-			<div class="tweet" data-ex-content=".tweet"></div>
+			<div data-ex-formats="list{separator : '';last-separator : '';pair-separator : ''}" class="tweet" data-ex-content=".tweet"></div>
 		</div>
 <!--		<div data-ex-if-exists=".recentTweet" class="recentTweet">
 			<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Nearly One-third of Consumers Would Give Up Their Car Before Their Smartphone <a href="https://t.co/BVU0Kaalh3">https://t.co/BVU0Kaalh3</a></p>&mdash; Slashdot (@slashdot) <a href="https://twitter.com/slashdot/status/656716147438411776">October 21, 2015</a></blockquote>
@@ -511,8 +511,8 @@ blockquote {
  -->
 				</td> 
 				<td><span data-ex-content="value"></span></td> 
-				<td data-ex-content=".tweet"></td>
-				<td><span data-ex-content=".created-by"></span></td> 
+				<td data-ex-content=".tweet" data-ex-formats="list{separator : '';last-separator : '';pair-separator : ''}"></td>
+				<td><span data-ex-content=".created-by" data-ex-formats="list{separator : ', ';last-separator : ' and ';pair-separator : ' and '}"></span></td> 
 				<td><span data-ex-content=".account_created_at"></span></td> 
 			</tr> 
 		</table>
