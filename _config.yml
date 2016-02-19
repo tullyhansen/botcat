@@ -4,15 +4,15 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
+# relative_permalinks: true
 
 # Setup
-title:               botDB
+title:               botcat
 tagline:             a directory of bots, allies, media and materials
 
 description: >       # this means to ignore newlines until "url:"
-                     a directory of bots, allies, media and materials
-url:                 http://tullyhansen.github.io
+                     a catalogue of bots, allies, media and materials
+url:                 http://bot.cat
 baseurl:             /botDB
 twitter_username:    botALLY
 
